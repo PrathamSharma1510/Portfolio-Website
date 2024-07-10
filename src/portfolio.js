@@ -1,7 +1,7 @@
 /* Change this file to get your personal Porfolio */
 // Website related settings
 const settings = {
-  isSplash: true, // Change this to false if you don't want Splash screen.
+  isSplash: false, // Change this to false if you don't want Splash screen.
 };
 // logo_path:
 //SEO Related settings
@@ -22,9 +22,9 @@ const greeting = {
   logo_name: "Prathamsharma",
   subTitle:
     "A passionate individual who always thrives to work on end to end products which develop sustainable and scalable social and technical systems to create impact.",
-  // resumeLink:
-  //   "https://drive.google.com/file/d/1bXRknv_h-XI_3CQ3SGPteGODtvEb7YvI/view?usp=sharing",
-  // portfolio_repository: "https://github.com/ashutosh1919/masterPortfolio",
+  resumeLink:
+    "https://drive.google.com/file/d/1CWxHrazdJjA4y2vw3F8IxrLKfbUvUgua/view?usp=sharing",
+  // portfolio_repository: "",
   githubProfile: "https://github.com/PrathamSharma1510",
 };
 
