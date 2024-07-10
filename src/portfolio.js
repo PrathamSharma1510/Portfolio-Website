@@ -8,7 +8,7 @@ const settings = {
 const seo = {
   title: "Pratham's Portfolio",
   description:
-    "A passionate individual who always thrives to work on end to end products which develop sustainable and scalable social and technical systems to create impact.",
+    "I am a passionate software engineer, currently pursuing a Master's in Computer Science, dedicated to developing end-to-end products that build sustainable and scalable social and technical systems for meaningful impact.",
   og: {
     title: "Pratham Sharma Portfolio",
     type: "website",
@@ -21,7 +21,7 @@ const greeting = {
   title: "Pratham Sharma",
   logo_name: "Prathamsharma",
   subTitle:
-    "A passionate individual who always thrives to work on end to end products which develop sustainable and scalable social and technical systems to create impact.",
+    "I am a passionate software engineer, currently pursuing a Master's in Computer Science, dedicated to developing end-to-end products that build sustainable and scalable social and technical systems for meaningful impact.",
   resumeLink:
     "https://drive.google.com/file/d/1CWxHrazdJjA4y2vw3F8IxrLKfbUvUgua/view?usp=sharing",
   // portfolio_repository: "",
@@ -58,57 +58,11 @@ const socialMediaLinks = [
 
 const skills = {
   data: [
-    // {
-    //   title: "Data Science & AI",
-    //   fileName: "DataScienceImg",
-    //   skills: [
-    //     "⚡ Developing highly scalable production ready models for various deeplearning and statistical use cases",
-    //     "⚡ Experience of working with Computer Vision and NLP projects",
-    //     "⚡ Complex quantitative modelling for dynamic forecasting and time series analysis",
-    //   ],
-    //   softwareSkills: [
-    //     {
-    //       skillName: "Tensorflow",
-    //       fontAwesomeClassname: "logos-tensorflow",
-    //       style: {
-    //         backgroundColor: "transparent",
-    //       },
-    //     },
-    //     {
-    //       skillName: "Keras",
-    //       fontAwesomeClassname: "simple-icons:keras",
-    //       style: {
-    //         backgroundColor: "white",
-    //         color: "#D00000",
-    //       },
-    //     },
-    //     {
-    //       skillName: "PyTorch",
-    //       fontAwesomeClassname: "logos-pytorch",
-    //       style: {
-    //         backgroundColor: "transparent",
-    //       },
-    //     },
-    //     {
-    //       skillName: "Python",
-    //       fontAwesomeClassname: "ion-logo-python",
-    //       style: {
-    //         backgroundColor: "transparent",
-    //         color: "#3776AB",
-    //       },
-    //     },
-    //     {
-    //       skillName: "Deeplearning",
-    //       imageSrc: "deeplearning_ai_logo.png",
-    //     },
-    //   ],
-    // },
     {
       title: "Full Stack Development",
       fileName: "FullStackImg",
       skills: [
-        "⚡ Building responsive website front end using React-Redux",
-        "⚡ Developing mobile applications using Flutter, React Native and solo android apps using Kotlin",
+        "⚡ Building highly responsive and interactive front-end websites using React-Redux to ensure a seamless user experience across various devices and screen sizes.",
         "⚡ Creating application backend in Node, Express & Flask",
       ],
       softwareSkills: [
@@ -189,10 +143,8 @@ const skills = {
       title: "Cloud Infra-Architecture",
       fileName: "CloudInfraImg",
       skills: [
-        "⚡ Experience working on multiple cloud platforms",
-        "⚡ Hosting and maintaining websites on virtual machine instances along with integration of databases",
-        "⚡ Deploying deep learning models on cloud to use on mobile devices",
-        "⚡ Setting up streaming jobs from DB to Server or vice-versa on GCP and AWS",
+        "⚡ Worked with hosting and maintaining websites on virtual machine instances, integrating databases for seamless data management.",
+        "⚡ Learned to containerize applications using Docker, ensuring consistent and efficient deployment across different environments.",
       ],
       softwareSkills: [
         {
@@ -253,45 +205,51 @@ const skills = {
         },
       ],
     },
-    // {
-    //   title: "UI/UX Design",
-    //   fileName: "DesignImg",
-    //   skills: [
-    //     "⚡ Designing highly attractive user interface for mobile and web applications",
-    //     "⚡ Customizing logo designs and building logos from scratch",
-    //     "⚡ Creating the flow of application functionalities to optimize user experience",
-    //   ],
-    //   softwareSkills: [
-    //     {
-    //       skillName: "Adobe XD",
-    //       fontAwesomeClassname: "simple-icons:adobexd",
-    //       style: {
-    //         color: "#FF2BC2",
-    //       },
-    //     },
-    //     {
-    //       skillName: "Figma",
-    //       fontAwesomeClassname: "simple-icons:figma",
-    //       style: {
-    //         color: "#F24E1E",
-    //       },
-    //     },
-    //     {
-    //       skillName: "Adobe Illustrator",
-    //       fontAwesomeClassname: "simple-icons:adobeillustrator",
-    //       style: {
-    //         color: "#FF7C00",
-    //       },
-    //     },
-    //     {
-    //       skillName: "Inkscape",
-    //       fontAwesomeClassname: "simple-icons:inkscape",
-    //       style: {
-    //         color: "#000000",
-    //       },
-    //     },
-    //   ],
-    // },
+    {
+      title: "Data Science & AI",
+      fileName: "DataScienceImg",
+      skills: [
+        "⚡ Developed a comprehensive understanding of machine learning engineering, focusing on LLMs, CNNs, and RNNs, through coursework and hands-on projects.",
+        "⚡ Completed an in-depth project on deep fake detection, applying advanced machine learning techniques and gaining practical experience in model development and evaluation.",
+        "⚡  Enhanced skills in natural language processing and data science by fine-tuning models and tackling complex assignments, achieving a solid grasp of the principles and applications of AI.",
+      ],
+      softwareSkills: [
+        {
+          skillName: "Tensorflow",
+          fontAwesomeClassname: "logos-tensorflow",
+          style: {
+            backgroundColor: "transparent",
+          },
+        },
+        {
+          skillName: "Keras",
+          fontAwesomeClassname: "simple-icons:keras",
+          style: {
+            backgroundColor: "white",
+            color: "#D00000",
+          },
+        },
+        {
+          skillName: "PyTorch",
+          fontAwesomeClassname: "logos-pytorch",
+          style: {
+            backgroundColor: "transparent",
+          },
+        },
+        {
+          skillName: "Python",
+          fontAwesomeClassname: "ion-logo-python",
+          style: {
+            backgroundColor: "transparent",
+            color: "#3776AB",
+          },
+        },
+        {
+          skillName: "Deeplearning",
+          imageSrc: "deeplearning_ai_logo.png",
+        },
+      ],
+    },
   ],
 };
 
@@ -568,7 +526,7 @@ const experience = {
 const projectsHeader = {
   title: "Projects",
   description:
-    "My projects makes use of vast variety of latest technology tools. My best experience is to create Data Science projects and deploy them to web applications using cloud infrastructure.",
+    "My projects leverage a wide array of cutting-edge technology tools. I excel in creating full-stack applications and deploying them efficiently. This hands-on experience has honed my skills in both front-end and back-end development, ensuring robust and scalable solutions.",
   avatar_image_path: "projects_image.svg",
 };
 
@@ -610,7 +568,7 @@ const contactPageData = {
     title: "Contact Me",
     profile_image_path: "animated_ashutosh.png",
     description:
-      "I am available on almost every social media. You can message me, I will reply within 24 hours. I can help you with ML, AI, React, Android, Cloud and Opensource Development.",
+      "I am active on most social media platforms and typically respond within 24 hours. I am currently seeking a full-time job or internship. If my profile interests you, please feel free to reach out to me.",
   },
   // blogSection: {
   //   title: "Blogs",
