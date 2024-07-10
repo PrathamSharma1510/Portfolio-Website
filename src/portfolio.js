@@ -47,62 +47,62 @@ const socialMediaLinks = [
     fontAwesomeIcon: "fa-google", // Reference https://fontawesome.com/icons/google?style=brands
     backgroundColor: "#D14836", // Reference https://simpleicons.org/?q=gmail
   },
-  {
-    // need to change this
-    name: "Leetcode",
-    link: "https://leetcode.com/u/user2217AM/",
-    fontAwesomeIcon: "fa-solid fa-pen", // Reference https://fontawesome.com/icons/instagram?style=brands
-    backgroundColor: "#D14836", // Reference https://simpleicons.org/?q=instagram
-  },
+  // {
+  //   // need to change this
+  //   name: "Leetcode",
+  //   link: "https://leetcode.com/u/user2217AM/",
+  //   fontAwesomeIcon: "simple-icons:leetcode", // Reference https://fontawesome.com/icons/instagram?style=brands
+  //   // backgroundColor: "#D14836", // Reference https://simpleicons.org/?q=instagram
+  // },
 ];
 
 const skills = {
   data: [
-    {
-      title: "Data Science & AI",
-      fileName: "DataScienceImg",
-      skills: [
-        "⚡ Developing highly scalable production ready models for various deeplearning and statistical use cases",
-        "⚡ Experience of working with Computer Vision and NLP projects",
-        "⚡ Complex quantitative modelling for dynamic forecasting and time series analysis",
-      ],
-      softwareSkills: [
-        {
-          skillName: "Tensorflow",
-          fontAwesomeClassname: "logos-tensorflow",
-          style: {
-            backgroundColor: "transparent",
-          },
-        },
-        {
-          skillName: "Keras",
-          fontAwesomeClassname: "simple-icons:keras",
-          style: {
-            backgroundColor: "white",
-            color: "#D00000",
-          },
-        },
-        {
-          skillName: "PyTorch",
-          fontAwesomeClassname: "logos-pytorch",
-          style: {
-            backgroundColor: "transparent",
-          },
-        },
-        {
-          skillName: "Python",
-          fontAwesomeClassname: "ion-logo-python",
-          style: {
-            backgroundColor: "transparent",
-            color: "#3776AB",
-          },
-        },
-        {
-          skillName: "Deeplearning",
-          imageSrc: "deeplearning_ai_logo.png",
-        },
-      ],
-    },
+    // {
+    //   title: "Data Science & AI",
+    //   fileName: "DataScienceImg",
+    //   skills: [
+    //     "⚡ Developing highly scalable production ready models for various deeplearning and statistical use cases",
+    //     "⚡ Experience of working with Computer Vision and NLP projects",
+    //     "⚡ Complex quantitative modelling for dynamic forecasting and time series analysis",
+    //   ],
+    //   softwareSkills: [
+    //     {
+    //       skillName: "Tensorflow",
+    //       fontAwesomeClassname: "logos-tensorflow",
+    //       style: {
+    //         backgroundColor: "transparent",
+    //       },
+    //     },
+    //     {
+    //       skillName: "Keras",
+    //       fontAwesomeClassname: "simple-icons:keras",
+    //       style: {
+    //         backgroundColor: "white",
+    //         color: "#D00000",
+    //       },
+    //     },
+    //     {
+    //       skillName: "PyTorch",
+    //       fontAwesomeClassname: "logos-pytorch",
+    //       style: {
+    //         backgroundColor: "transparent",
+    //       },
+    //     },
+    //     {
+    //       skillName: "Python",
+    //       fontAwesomeClassname: "ion-logo-python",
+    //       style: {
+    //         backgroundColor: "transparent",
+    //         color: "#3776AB",
+    //       },
+    //     },
+    //     {
+    //       skillName: "Deeplearning",
+    //       imageSrc: "deeplearning_ai_logo.png",
+    //     },
+    //   ],
+    // },
     {
       title: "Full Stack Development",
       fileName: "FullStackImg",
@@ -253,45 +253,45 @@ const skills = {
         },
       ],
     },
-    {
-      title: "UI/UX Design",
-      fileName: "DesignImg",
-      skills: [
-        "⚡ Designing highly attractive user interface for mobile and web applications",
-        "⚡ Customizing logo designs and building logos from scratch",
-        "⚡ Creating the flow of application functionalities to optimize user experience",
-      ],
-      softwareSkills: [
-        {
-          skillName: "Adobe XD",
-          fontAwesomeClassname: "simple-icons:adobexd",
-          style: {
-            color: "#FF2BC2",
-          },
-        },
-        {
-          skillName: "Figma",
-          fontAwesomeClassname: "simple-icons:figma",
-          style: {
-            color: "#F24E1E",
-          },
-        },
-        {
-          skillName: "Adobe Illustrator",
-          fontAwesomeClassname: "simple-icons:adobeillustrator",
-          style: {
-            color: "#FF7C00",
-          },
-        },
-        {
-          skillName: "Inkscape",
-          fontAwesomeClassname: "simple-icons:inkscape",
-          style: {
-            color: "#000000",
-          },
-        },
-      ],
-    },
+    // {
+    //   title: "UI/UX Design",
+    //   fileName: "DesignImg",
+    //   skills: [
+    //     "⚡ Designing highly attractive user interface for mobile and web applications",
+    //     "⚡ Customizing logo designs and building logos from scratch",
+    //     "⚡ Creating the flow of application functionalities to optimize user experience",
+    //   ],
+    //   softwareSkills: [
+    //     {
+    //       skillName: "Adobe XD",
+    //       fontAwesomeClassname: "simple-icons:adobexd",
+    //       style: {
+    //         color: "#FF2BC2",
+    //       },
+    //     },
+    //     {
+    //       skillName: "Figma",
+    //       fontAwesomeClassname: "simple-icons:figma",
+    //       style: {
+    //         color: "#F24E1E",
+    //       },
+    //     },
+    //     {
+    //       skillName: "Adobe Illustrator",
+    //       fontAwesomeClassname: "simple-icons:adobeillustrator",
+    //       style: {
+    //         color: "#FF7C00",
+    //       },
+    //     },
+    //     {
+    //       skillName: "Inkscape",
+    //       fontAwesomeClassname: "simple-icons:inkscape",
+    //       style: {
+    //         color: "#000000",
+    //       },
+    //     },
+    //   ],
+    // },
   ],
 };
 
@@ -304,47 +304,15 @@ const competitiveSites = {
       style: {
         color: "#F79F1B",
       },
-      profileLink: "https://leetcode.com/layman_brother/",
+      profileLink: "https://leetcode.com/u/user2217AM/",
     },
     {
-      siteName: "HackerRank",
-      iconifyClassname: "simple-icons:hackerrank",
+      siteName: "GFG",
+      iconifyClassname: "simple-icons:geeksforgeeks",
       style: {
-        color: "#2EC866",
+        color: "green",
       },
-      profileLink: "https://www.hackerrank.com/layman_brother",
-    },
-    {
-      siteName: "Codechef",
-      iconifyClassname: "simple-icons:codechef",
-      style: {
-        color: "#5B4638",
-      },
-      profileLink: "https://www.codechef.com/users/ashutosh_1919",
-    },
-    {
-      siteName: "Codeforces",
-      iconifyClassname: "simple-icons:codeforces",
-      style: {
-        color: "#1F8ACB",
-      },
-      profileLink: "http://codeforces.com/profile/layman_brother",
-    },
-    {
-      siteName: "Hackerearth",
-      iconifyClassname: "simple-icons:hackerearth",
-      style: {
-        color: "#323754",
-      },
-      profileLink: "https://www.hackerearth.com/@ashutosh391",
-    },
-    {
-      siteName: "Kaggle",
-      iconifyClassname: "simple-icons:kaggle",
-      style: {
-        color: "#20BEFF",
-      },
-      profileLink: "https://www.kaggle.com/laymanbrother",
+      profileLink: "https://www.geeksforgeeks.org/user/prathamsharma6113/",
     },
   ],
 };
@@ -352,30 +320,30 @@ const competitiveSites = {
 const degrees = {
   degrees: [
     {
-      title: "Indian Institute of Information Technology Kurnool",
-      subtitle: "B.Tech. in Computer Engineering",
-      logo_path: "iiitk_logo.png",
+      title: "UNIVERSITY OF FLORIDA",
+      subtitle: "Master of Science in Computer Science and Engineering",
+      logo_path: "UF.png",
       alt_name: "IIITDM Kurnool",
-      duration: "2016 - 2020",
+      duration: "August 2023 - December 2024 (Expected)",
       descriptions: [
-        "⚡ I have studied basic software engineering subjects like DS, Algorithms, DBMS, OS, CA, AI etc.",
-        "⚡ Apart from this, I have done courses on Deep Learning, Data Science, Cloud Computing and Full Stack Development.",
-        "⚡ I was selected for Merit cum Means Scholarship which is given to top 10% of students in college. I have received award from respected director for consistently best performance in academics.",
+        "⚡ Completed advanced courses in Computer Vision, Advanced Data Structures, Human-Computer Interaction, Machine Learning Engineering, Natural Language Processing, Data Engineering, Software Engineering, Computer Networks, and Distributed Operating System.",
+        "⚡ Awarded the Achievement Award Scholarship, representing a savings of $4,500 during the Master’s degree program for academic excellence.",
+        "⚡ Worked as a Teaching Assistant for INTRO TO COMPUTER ORGANIZATION (CDA3101) and SENIOR DESIGN PROJECT (CIS4914) and as a Research Assistant under Ivan Ruchkin during Summer 2024.",
       ],
-      website_link: "http://iiitk.ac.in",
+      website_link: "https://www.ufl.edu/",
     },
     {
-      title: "Indiana University Bloomington",
-      subtitle: "M.S. in Computer Science",
-      logo_path: "iu_logo.png",
-      alt_name: "Indiana University Bloomington",
-      duration: "2021 - 2023",
+      title: "BENNETT UNIVERSITY",
+      subtitle: "B.Tech in Computer Science",
+      logo_path: "Bennett_University.webp",
+      alt_name: "BENNETT UNIVERSITY",
+      duration: "August 2019 - May 2023",
       descriptions: [
-        "⚡ I have taken varity of courses related to Artificial Intelligence which correspond to Explainable AI, Graph Machine Learning, Computer Vision etc.",
-        "⚡ Apart from this, I have also done research assistantship. As part of it, I have worked on creating new algorithms in Graph ML and Network Science.",
-        "⚡ During my time at university, I was also associated with multimedia department. As part of it, I have worked on some documentry films and interviews.",
+        "⚡ Studied Data Structures, Algorithms, Machine Learning, Cloud Computing, Web Development, and more.",
+        "⚡ Secured a 30% tuition scholarship for high school grades and received a Letter of Appreciation for a perfect SGPA of 10/10 in the 7th semester.",
+        "⚡ One of the few students selected for a research internship at Georgia Tech from Bennett University.",
       ],
-      website_link: "https://www.indiana.edu/",
+      website_link: "https://www.bennett.edu.in/",
     },
   ],
 };
@@ -383,112 +351,94 @@ const degrees = {
 const certifications = {
   certifications: [
     {
-      title: "Machine Learning",
-      subtitle: "- Andrew Ng",
-      logo_path: "stanford_logo.png",
+      title: "Web Developers",
+      subtitle: "John Hopkins University",
+      logo_path: "jk.jpg",
       certificate_link:
-        "https://www.coursera.org/account/accomplishments/verify/22MTSSC5WDTM",
-      alt_name: "Stanford University",
-      color_code: "#8C151599",
+        "https://www.coursera.org/account/accomplishments/certificate/4PEFZWXPWMT3",
+      alt_name: "John Hopkins University",
+      color_code: "white",
     },
     {
-      title: "Deep Learning",
-      subtitle: "- Andrew Ng",
-      logo_path: "deeplearning_ai_logo.png",
+      title: "C++",
+      subtitle: "Data Structures and algorithms",
+      logo_path: "udemy.png",
       certificate_link:
-        "https://www.coursera.org/account/accomplishments/specialization/H8CPSFXAJD2G",
-      alt_name: "deeplearning.ai",
-      color_code: "#00000099",
+        "https://www.udemy.com/certificate/UC-a281df1f-6e6d-43de-8f53-74017fe2d1bd/",
+      alt_name: "Data Structures and algorithms",
+      color_code: "white",
     },
     {
-      title: "ML on GCP",
-      subtitle: "- GCP Training",
-      logo_path: "google_logo.png",
+      title: "Data Structures and algorithms",
+      subtitle: "Python Data Structures Michigan university.",
+      logo_path: "UM.png",
       certificate_link:
-        "https://www.coursera.org/account/accomplishments/specialization/EB4VJARK8647",
-      alt_name: "Google",
-      color_code: "#0C9D5899",
-    },
-    {
-      title: "Data Science",
-      subtitle: "- Alex Aklson",
-      logo_path: "ibm_logo.png",
-      certificate_link:
-        "https://www.coursera.org/account/accomplishments/specialization/PLEAPCSJBZT5",
-      alt_name: "IBM",
+        "https://www.coursera.org/account/accomplishments/certificate/G4PA8DKVJAGW",
+      alt_name: "Data Structures and algorithms",
       color_code: "#1F70C199",
     },
     {
-      title: "Big Data",
-      subtitle: "- Kim Akers",
+      title: "cognitiveclass",
+      subtitle: "Introduction to Data Science",
+      logo_path: "CC.jpg",
+      certificate_link:
+        "https://courses.cognitiveclass.ai/certificates/f6fa89fea2a14819985ad32f9fbb81e3",
+      alt_name: "Introduction to Data Science",
+      color_code: "#D83B0199",
+    },
+    {
+      title: "Pro Javascript backend developer",
+      subtitle: "Pro Javascript backend developer",
+      logo_path: "udemy.png",
+      certificate_link:
+        "https://www.udemy.com/certificate/UC-a19a88e1-145c-40fb-a4ee-3c246f0d0ef2/",
+      alt_name: "Pro Javascript backend developer",
+      color_code: "white",
+    },
+    {
+      title: "Microsoft Certified",
+      subtitle: "Microsoft Certified: Azure AI Fundamentals",
       logo_path: "microsoft_logo.png",
       certificate_link:
-        "https://drive.google.com/file/d/164zKCFOsI4vGqokc-Qj-e_D00kLDHIrG/view",
+        "https://www.credly.com/badges/f31d8326-9151-462f-b464-dcf978327d65?source=linked_in_profile",
       alt_name: "Microsoft",
       color_code: "#D83B0199",
     },
     {
-      title: "Advanced Data Science",
-      subtitle: "- Romeo Kienzler",
-      logo_path: "ibm_logo.png",
+      title: "Microsoft Certified",
+      subtitle: "Microsoft Certified: Azure AI Fundamentals",
+      logo_path: "microsoft_logo.png",
       certificate_link:
-        "https://www.coursera.org/account/accomplishments/verify/BH2T9BRU87BH",
-      alt_name: "IBM",
+        "https://drive.google.com/file/d/1pAf0N-4uze-T4LPpUkqi05G5I5ekgzYY/view",
+      alt_name: "Microsoft",
+      color_code: "#D83B0199",
+    },
+    {
+      title: "Microsoft Certified",
+      subtitle: "Microsoft Certified: Azure Administrator Associate",
+      logo_path: "microsoft_logo.png",
+      certificate_link:
+        "https://drive.google.com/file/d/15O0Eal-g7PD5Vogi3c3aUeun9ZZNEBno/view",
+      alt_name: "Microsoft",
+      color_code: "#D83B0199",
+    },
+    {
+      title: "Introduction to Project Management",
+      subtitle: "SkillUP",
+      logo_path: "SU.png",
+      certificate_link:
+        "https://drive.google.com/file/d/1Xa5p4Ei7vEBI8dkQOJ9MBbCsCUazF8Yc/view",
+      alt_name: "SkillUP",
       color_code: "#1F70C199",
     },
     {
-      title: "Advanced ML on GCP",
-      subtitle: "- GCP Training",
-      logo_path: "google_logo.png",
+      title: "Introduction to Containers, Kubernetes, and OpenShift V2",
+      subtitle: "cognitiveclass",
+      logo_path: "CC.jpg",
       certificate_link:
-        "https://www.coursera.org/account/accomplishments/verify/5JZZM7TNQ2AV",
-      alt_name: "Google",
-      color_code: "#0C9D5899",
-    },
-    {
-      title: "DL on Tensorflow",
-      subtitle: "- Laurence Moroney",
-      logo_path: "deeplearning_ai_logo.png",
-      certificate_link:
-        "https://www.coursera.org/account/accomplishments/verify/6T4DCUGNK8J8",
-      alt_name: "deeplearning.ai",
-      color_code: "#00000099",
-    },
-    {
-      title: "Fullstack Development",
-      subtitle: "- Jogesh Muppala",
-      logo_path: "coursera_logo.png",
-      certificate_link:
-        "https://www.coursera.org/account/accomplishments/certificate/NRANJA66Y2YA",
-      alt_name: "Coursera",
-      color_code: "#2A73CC",
-    },
-    {
-      title: "Kuberenetes on GCP",
-      subtitle: "- Qwiklabs",
-      logo_path: "gcp_logo.png",
-      certificate_link:
-        "https://google.qwiklabs.com/public_profiles/e4d5a92b-faf6-4679-a70b-a9047c0cd750",
-      alt_name: "GCP",
-      color_code: "#4285F499",
-    },
-    {
-      title: "Cryptography",
-      subtitle: "- Saurabh Mukhopadhyay",
-      logo_path: "nptel_logo.png",
-      certificate_link:
-        "https://drive.google.com/open?id=1z5ExD_QJVdU0slLkp8CBqSF3-C3g-ro_",
-      alt_name: "NPTEL",
-      color_code: "#FFBB0099",
-    },
-    {
-      title: "Cloud Architecture",
-      subtitle: "- Qwiklabs",
-      logo_path: "gcp_logo.png",
-      certificate_link:
-        "https://google.qwiklabs.com/public_profiles/5fab4b2d-be6f-408c-8dcb-6d3b58ecb4a2",
-      alt_name: "GCP",
-      color_code: "#4285F499",
+        "https://courses.cognitiveclass.ai/certificates/a06484e3c82a433f819c1ceba11a4a41",
+      alt_name: "cognitiveclass",
+      color_code: "#1F70C199",
     },
   ],
 };
