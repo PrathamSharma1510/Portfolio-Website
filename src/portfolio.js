@@ -566,7 +566,7 @@ const publications = {
 const contactPageData = {
   contactSection: {
     title: "Contact Me",
-    profile_image_path: "me.jpg",
+    profile_image_path: "animated_ashutosh.png",
     description:
       "I am active on most social media platforms and typically respond within 24 hours. I am currently seeking a full-time job or internship. If my profile interests you, please feel free to reach out to me.",
   },
