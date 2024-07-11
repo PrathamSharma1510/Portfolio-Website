@@ -501,9 +501,9 @@ const experience = {
           company_url: "https://www.bennett.edu.in/",
           logo_path: "Bennett_University.webp",
           duration: "Feb 2021 - Aug 2021",
-          location: "Greater Noida, UF",
+          location: "Greater Noida, UP",
           description:
-            "Managed a team for sponsorships and led the core research team, maintaining connections between professors and students for research activities.",
+            "Managed a team for sponsorships and led the core research team, maintaining connections between professors and students for research activities, and successfully secured multiple funding sources for various projects.",
           color: "#ee3c26",
         },
         {
@@ -512,7 +512,7 @@ const experience = {
           company_url: "https://www.bennett.edu.in/",
           logo_path: "Bennett_University.webp",
           duration: "Feb 2021 - Aug 2021",
-          location: "Greater Noida, UF",
+          location: "Greater Noida, UP",
           description:
             "Served on the Sponsorship & Outreach Team of the Student Council at Bennett University, facilitating partnerships and enhancing student engagement through effective outreach initiatives.",
           color: "#ee3c26",
