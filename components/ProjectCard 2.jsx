@@ -49,26 +49,26 @@ const ProjectCard = ({ project, index }) => {
             </a>
           )}
           {project.demo && (
-          <a
-            href={project.demo}
-            target="_blank"
-            rel="noopener noreferrer"
+            <a
+              href={project.demo}
+              target="_blank"
+              rel="noopener noreferrer"
               className={`${styles.button} ${styles.primaryButton}`}
-          >
+            >
               <span className={styles.buttonIcon}>🚀</span>
-            Live Demo
-          </a>
+              Live Demo
+            </a>
           )}
           {project.paper && (
-          <a
-            href={project.paper}
-            target="_blank"
-            rel="noopener noreferrer"
+            <a
+              href={project.paper}
+              target="_blank"
+              rel="noopener noreferrer"
               className={styles.button}
-          >
+            >
               <span className={styles.buttonIcon}>📄</span>
-            Paper
-          </a>
+              Paper
+            </a>
           )}
         </div>
       </div>
@@ -80,4 +80,3 @@ const ProjectCard = ({ project, index }) => {
 };
 
 export default ProjectCard;
-
