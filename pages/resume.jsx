@@ -1,14 +1,17 @@
 import React from 'react';
 import { Worker, Viewer } from '@react-pdf-viewer/core';
 import '@react-pdf-viewer/core/lib/styles/index.css';
+import Breadcrumbs from '../components/Breadcrumbs';
 
 const ResumePage = () => {
   const [error, setError] = React.useState(null);
-  const resumeLink = '/Vedansh_Maheshwari_Resume.pdf';
+  const resumeLink = '/Pratham_Sharma_resume.pdf';
 
   return (
-    <div className="container mx-auto p-4">
-      <h3 className="text-2xl font-bold mb-4">My Resume</h3>
+    <>
+      <Breadcrumbs filename="resume.pdf" />
+      <div className="container mx-auto p-4">
+        <h3 className="text-2xl font-bold mb-4">My Resume</h3>
       <div className="h-[90vh]">
         {error ? (
           <div className="text-red-500">
@@ -23,7 +26,8 @@ const ResumePage = () => {
           </Worker>
         )}
       </div>
-    </div>
+      </div>
+    </>
   );
 };
 

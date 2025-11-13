@@ -17,6 +17,7 @@ const EducationCard = ({ education }) => (
   >
     <h3 className="vertical-timeline-element-title">{education.degree}</h3>
     <h4 className="vertical-timeline-element-subtitle">{education.school}</h4>
+    {education.grade && <div className={styles.grade}>{education.grade}</div>}
     <p>{education.description}</p>
   </VerticalTimelineElement>
 );

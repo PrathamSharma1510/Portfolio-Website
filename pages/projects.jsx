@@ -1,10 +1,12 @@
 import ProjectCard from '../components/ProjectCard';
 import { getProjects } from './api/projects';
+import Breadcrumbs from '../components/Breadcrumbs';
 import styles from '../styles/ProjectsPage.module.css';
 
 const ProjectsPage = ({ projects }) => {
   return (
     <>
+      <Breadcrumbs filename="projects.js" />
       <h3>Stuff I've Built So Far</h3>
       <div className={styles.container}>
         {projects.map((project) => (

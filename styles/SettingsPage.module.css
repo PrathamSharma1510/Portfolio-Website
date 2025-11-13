@@ -1,6 +1,735 @@
+/* Settings Page - Modern & Innovative Design */
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;600&display=swap');
+
 .container {
-  display: grid;
-  align-items: center;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  margin: 1rem 0;
+  min-height: 90vh;
+  background: var(--main-bg);
+  padding: 2rem;
+  font-family: 'Fira Code', monospace;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: all 0.6s ease-out;
 }
+
+.container.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Header */
+.header {
+  margin-bottom: 2rem;
+  animation: fadeInDown 0.6s ease-out;
+}
+
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.title {
+  font-size: 2rem;
+  color: var(--text-color);
+  margin: 0 0 0.5rem 0;
+  font-weight: 600;
+}
+
+.subtitle {
+  color: #888;
+  font-size: 0.95rem;
+  margin: 0;
+}
+
+/* Tabs */
+.tabs {
+  display: flex;
+  gap: 0.5rem;
+  margin-bottom: 2rem;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.1);
+  overflow-x: auto;
+  animation: fadeIn 0.6s ease-out 0.2s both;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+.tab {
+  background: transparent;
+  border: none;
+  color: #888;
+  padding: 1rem 1.5rem;
+  font-size: 0.95rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  border-bottom: 3px solid transparent;
+  font-family: 'Fira Code', monospace;
+  position: relative;
+}
+
+.tab:hover {
+  color: var(--accent-color);
+  background: rgba(255, 255, 255, 0.03);
+}
+
+.activeTab {
+  color: var(--accent-color);
+  border-bottom-color: var(--accent-color);
+}
+
+.tabIcon {
+  font-size: 1.2rem;
+}
+
+/* Content */
+.content {
+  animation: slideIn 0.6s ease-out 0.3s both;
+}
+
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateX(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.tabContent {
+  min-height: 400px;
+}
+
+.section {
+  background: rgba(255, 255, 255, 0.02);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 12px;
+  padding: 2rem;
+  margin-bottom: 2rem;
+  transition: all 0.3s ease;
+}
+
+.section:hover {
+  border-color: rgba(255, 255, 255, 0.2);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+}
+
+.sectionTitle {
+  font-size: 1.4rem;
+  color: var(--text-color);
+  margin: 0 0 0.5rem 0;
+  font-weight: 600;
+}
+
+.sectionDescription {
+  color: #888;
+  font-size: 0.9rem;
+  margin: 0 0 1.5rem 0;
+}
+
+/* Themes Grid */
+.themesGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 1.5rem;
+  margin-top: 1.5rem;
+}
+
+/* Setting Items */
+.settingItem {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem;
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  margin-bottom: 1rem;
+  transition: all 0.3s ease;
+}
+
+.settingItem:hover {
+  border-color: var(--accent-color);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
+  transform: translateX(5px);
+}
+
+.settingLabel {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  flex: 1;
+}
+
+.settingIcon {
+  font-size: 1.5rem;
+  min-width: 30px;
+}
+
+.settingLabel h4 {
+  margin: 0 0 0.3rem 0;
+  font-size: 1rem;
+  color: var(--text-color);
+}
+
+.settingLabel p {
+  margin: 0;
+  font-size: 0.85rem;
+  color: #888;
+}
+
+.settingControl {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  min-width: 200px;
+}
+
+/* Options Control - Button Group */
+.optionsControl {
+  display: flex;
+  gap: 0.75rem;
+}
+
+.optionButton {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.25rem;
+  padding: 0.75rem 1rem;
+  background: rgba(255, 255, 255, 0.03);
+  border: 2px solid rgba(255, 255, 255, 0.1);
+  border-radius: 8px;
+  color: var(--text-color);
+  font-size: 0.9rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-family: 'Fira Code', monospace;
+}
+
+.optionButton:hover {
+  border-color: var(--accent-color);
+  background: rgba(255, 255, 255, 0.05);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.activeOption {
+  background: var(--accent-color) !important;
+  border-color: var(--accent-color) !important;
+  color: white !important;
+  box-shadow: 0 4px 16px rgba(var(--accent-color), 0.4);
+}
+
+.activeOption:hover {
+  transform: translateY(-2px);
+}
+
+.optionValue {
+  font-size: 0.75rem;
+  opacity: 0.8;
+  font-weight: 400;
+}
+
+/* Select Dropdown */
+.select {
+  padding: 0.75rem 1rem;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 8px;
+  color: var(--text-color);
+  font-size: 0.95rem;
+  font-family: 'Fira Code', monospace;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  min-width: 180px;
+}
+
+.select:hover {
+  border-color: var(--accent-color);
+  box-shadow: 0 0 10px rgba(var(--accent-color), 0.2);
+}
+
+.select:focus {
+  outline: none;
+  border-color: var(--accent-color);
+}
+
+.select option {
+  background: var(--main-bg);
+  color: var(--text-color);
+}
+
+/* Toggle Switch */
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 30px;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.switchSlider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(255, 255, 255, 0.1);
+  transition: 0.4s;
+  border-radius: 30px;
+}
+
+.switchSlider:before {
+  position: absolute;
+  content: "";
+  height: 22px;
+  width: 22px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  transition: 0.4s;
+  border-radius: 50%;
+}
+
+.switch input:checked + .switchSlider {
+  background-color: var(--accent-color);
+}
+
+.switch input:checked + .switchSlider:before {
+  transform: translateX(30px);
+}
+
+.switch:hover .switchSlider {
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+}
+
+/* Action Buttons */
+.actionButtons {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1rem;
+  margin-top: 1.5rem;
+}
+
+.actionButton {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 2rem 1.5rem;
+  background: rgba(255, 255, 255, 0.03);
+  border: 2px solid rgba(255, 255, 255, 0.1);
+  border-radius: 12px;
+  color: var(--text-color);
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-family: 'Fira Code', monospace;
+  text-align: center;
+}
+
+.actionButton:hover {
+  border-color: var(--accent-color);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
+  transform: translateY(-5px);
+}
+
+.buttonIcon {
+  font-size: 2rem;
+}
+
+.buttonDesc {
+  font-size: 0.8rem;
+  color: #888;
+}
+
+.fileInput {
+  position: absolute;
+  width: 0;
+  height: 0;
+  opacity: 0;
+}
+
+.dangerButton {
+  border-color: rgba(255, 99, 71, 0.3);
+}
+
+.dangerButton:hover {
+  border-color: rgb(255, 99, 71);
+  background: rgba(255, 99, 71, 0.1);
+}
+
+/* Info Box */
+.infoBox {
+  background: linear-gradient(135deg, rgba(102, 126, 234, 0.1) 0%, rgba(118, 75, 162, 0.1) 100%);
+  border: 1px solid rgba(102, 126, 234, 0.3);
+  border-radius: 10px;
+  padding: 1.5rem;
+  margin-top: 2rem;
+}
+
+.infoBox h4 {
+  margin: 0 0 0.5rem 0;
+  color: var(--accent-color);
+  font-size: 1.1rem;
+}
+
+.infoBox p {
+  margin: 0;
+  color: #aaa;
+  font-size: 0.9rem;
+  line-height: 1.6;
+}
+
+/* Preview Panel */
+.preview {
+  background: rgba(255, 255, 255, 0.02);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 12px;
+  padding: 2rem;
+  margin-top: 2rem;
+  animation: fadeIn 0.6s ease-out 0.4s both;
+}
+
+.previewTitle {
+  font-size: 1.2rem;
+  color: var(--text-color);
+  margin: 0 0 1rem 0;
+}
+
+.previewContent {
+  background: rgba(0, 0, 0, 0.3);
+  border-radius: 8px;
+  padding: 1.5rem;
+}
+
+.previewCode {
+  font-family: 'Fira Code', monospace;
+  font-size: 0.95rem;
+  line-height: 1.8;
+}
+
+.previewLine {
+  display: flex;
+  gap: 1rem;
+}
+
+.lineNumber {
+  color: #666;
+  min-width: 30px;
+  text-align: right;
+  user-select: none;
+}
+
+.keyword {
+  color: #c678dd;
+}
+
+.variable {
+  color: #e06c75;
+}
+
+.property {
+  color: #61afef;
+}
+
+.string {
+  color: #98c379;
+}
+
+.number {
+  color: #d19a66;
+}
+
+.boolean {
+  color: #56b6c2;
+}
+
+/* Reset Section */
+.resetSection {
+  margin-top: 2rem;
+  padding-top: 2rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  display: flex;
+  justify-content: center;
+}
+
+.resetButton {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.75rem 2rem;
+  background: rgba(255, 99, 71, 0.1);
+  border: 2px solid rgba(255, 99, 71, 0.3);
+  border-radius: 8px;
+  color: rgb(255, 99, 71);
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-family: 'Fira Code', monospace;
+}
+
+.resetButton:hover {
+  background: rgba(255, 99, 71, 0.2);
+  border-color: rgb(255, 99, 71);
+  transform: scale(1.05);
+  box-shadow: 0 4px 12px rgba(255, 99, 71, 0.3);
+}
+
+.resetButton .buttonIcon {
+  font-size: 1.2rem;
+}
+
+/* Modal Overlay */
+.modalOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.7);
+  backdrop-filter: blur(4px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+  animation: fadeIn 0.2s ease-out;
+}
+
+/* Modal */
+.modal {
+  background: var(--main-bg);
+  border: 2px solid rgba(255, 99, 71, 0.3);
+  border-radius: 16px;
+  padding: 2rem;
+  max-width: 500px;
+  width: 90%;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5);
+  animation: slideUp 0.3s ease-out;
+}
+
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.modalHeader {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.modalHeader h3 {
+  margin: 0;
+  color: var(--text-color);
+  font-size: 1.5rem;
+}
+
+.modalIcon {
+  font-size: 2rem;
+}
+
+.modalText {
+  color: #aaa;
+  margin: 0 0 1rem 0;
+  line-height: 1.6;
+}
+
+.modalList {
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 8px;
+  padding: 1rem 1rem 1rem 2rem;
+  margin: 1rem 0 1.5rem 0;
+}
+
+.modalList li {
+  color: var(--text-color);
+  margin: 0.5rem 0;
+  font-size: 0.95rem;
+}
+
+.modalActions {
+  display: flex;
+  gap: 1rem;
+  justify-content: flex-end;
+}
+
+.cancelButton,
+.confirmButton {
+  padding: 0.75rem 1.5rem;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-family: 'Fira Code', monospace;
+  border: 2px solid transparent;
+}
+
+.cancelButton {
+  background: rgba(255, 255, 255, 0.05);
+  color: var(--text-color);
+  border-color: rgba(255, 255, 255, 0.2);
+}
+
+.cancelButton:hover {
+  background: rgba(255, 255, 255, 0.1);
+  border-color: rgba(255, 255, 255, 0.3);
+}
+
+.confirmButton {
+  background: rgb(255, 99, 71);
+  color: white;
+  border-color: rgb(255, 99, 71);
+}
+
+.confirmButton:hover {
+  background: rgb(255, 120, 90);
+  box-shadow: 0 4px 12px rgba(255, 99, 71, 0.4);
+  transform: translateY(-2px);
+}
+
+/* Success Toast */
+.toast {
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  padding: 1rem 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  font-weight: 500;
+  z-index: 1001;
+  animation: slideInRight 0.3s ease-out;
+}
+
+@keyframes slideInRight {
+  from {
+    opacity: 0;
+    transform: translateX(100px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.toastIcon {
+  font-size: 1.5rem;
+  width: 30px;
+  height: 30px;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .container {
+    padding: 1rem;
+  }
+
+  .title {
+    font-size: 1.5rem;
+  }
+
+  .tabs {
+    flex-wrap: nowrap;
+    overflow-x: auto;
+  }
+
+  .tab {
+    padding: 0.75rem 1rem;
+    font-size: 0.85rem;
+  }
+
+  .themesGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .settingItem {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+  }
+
+  .settingControl {
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  .optionsControl {
+    width: 100%;
+    flex-direction: column;
+  }
+
+  .optionButton {
+    width: 100%;
+  }
+
+  .actionButtons {
+    grid-template-columns: 1fr;
+  }
+
+  .modal {
+    width: 95%;
+    padding: 1.5rem;
+  }
+
+  .modalActions {
+    flex-direction: column;
+  }
+
+  .cancelButton,
+  .confirmButton {
+    width: 100%;
+  }
+
+  .toast {
+    bottom: 1rem;
+    right: 1rem;
+    left: 1rem;
+    font-size: 0.9rem;
+  }
+}
+
+/* Animations - Reduced motion handled globally in globals.css */

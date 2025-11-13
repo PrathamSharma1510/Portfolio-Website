@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import Layout from "../components/Layout";
 import Head from "../components/Head";
+import { TabsProvider } from "../contexts/TabsContext";
 import "../styles/globals.css";
 import "../styles/themes.css";
 
@@ -16,10 +17,12 @@ function MyApp({ Component, pageProps }) {
   }, []);
 
   return (
-    <Layout>
-      <Head title={`Pratham Sharma | ${pageProps.title}`} />
-      <Component {...pageProps} />
-    </Layout>
+    <TabsProvider>
+      <Layout>
+        <Head title={`Pratham Sharma | ${pageProps.title}`} />
+        <Component {...pageProps} />
+      </Layout>
+    </TabsProvider>
   );
 }
 

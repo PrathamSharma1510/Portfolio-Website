@@ -1,0 +1,40 @@
+.breadcrumbs {
+  display: flex;
+  align-items: center;
+  padding: 0.4rem 1rem;
+  background: rgba(255, 255, 255, 0.02);
+  border-bottom: 1px solid var(--explorer-border);
+  font-size: 0.8rem;
+  font-family: 'Fira Code', monospace;
+  color: #858585;
+  gap: 0.5rem;
+}
+
+.folder {
+  color: #858585;
+  transition: color 0.2s ease;
+}
+
+.folder:hover {
+  color: #cccccc;
+  cursor: pointer;
+}
+
+.separator {
+  color: #505050;
+  user-select: none;
+}
+
+.file {
+  color: #cccccc;
+  font-weight: 500;
+}
+
+/* Responsive */
+@media screen and (max-width: 768px) {
+  .breadcrumbs {
+    font-size: 0.75rem;
+    padding: 0.35rem 0.75rem;
+  }
+}
+

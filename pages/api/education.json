@@ -4,28 +4,48 @@
     "degree": "Master of Science in Computer Science",
     "school": "University of Florida",
     "date": "August 2023 - December 2024",
-    "description": "Specialized coursework in NLP, Data Science, and Data Engineering.",
+    "grade": "GPA: 3.86/4.0",
+    "description": "Awarded the Achievement Award Scholarship ($4,500) for academic excellence. Coursework: Computer Vision, Advanced Data Structures, Human Computer Interaction, Machine Learning Engineering, Natural Language Processing, Data Engineering, Software Engineering, Computer Networks, Distributed Operating System.",
     "icon": "/UF.png",
-    "iconBg": "#2A9D8F"
+    "iconBg": "#FA4616"
   },
   {
     "id": 2,
-    "degree": "CISE Senior Certificate Program",
+    "degree": "Senior Certification Program - Computer Science",
     "school": "University of Florida",
     "date": "January 2023 - May 2023",
-    "description": "Distinguished coursework in Data Science and Advanced Data Structures.",
+    "grade": "GPA: 3.91/4.0",
+    "description": "Coursework: Intro to Data Science, Human Computer Interaction, Software Engineering, Computer Networks.",
     "icon": "/UF.png",
-    "iconBg": "#2A9D8F"
+    "iconBg": "#FA4616"
   },
   {
     "id": 3,
-    "degree": "Bachelor of Technology in Computer Science and Engineering",
-    "school": "Manipal University Jaipur",
-    "date": "August 2019 - July 2023",
-    "description": "Focused on Deep Learning, NLP, and Computer Networks.",
-    "icon": "/muj.png",
-    "iconBg": "#ffffff"
+    "degree": "Exchange Semester - Computer Science",
+    "school": "Georgia Institute of Technology",
+    "date": "August 2022 - December 2022",
+    "description": "Completed 7th semester as exchange student. One of the few students selected for research internship at Georgia Tech from Bennett University.",
+    "icon": "/georgia_institute_of_technology_logo.jpeg",
+    "iconBg": "#B3A369"
+  },
+  {
+    "id": 4,
+    "degree": "Bachelor of Engineering in Computer Science",
+    "school": "Bennett University",
+    "date": "July 2019 - May 2023",
+    "grade": "CGPA: 8.9/10",
+    "description": "Secured 30% tuition scholarship for high school grades. Received Letter of Appreciation for perfect SGPA of 10/10 in 7th semester. Selected for research internship at Georgia Tech. Skills: Python, Java, C++, Data Structures.",
+    "icon": "/bennett_university_logo.jpeg",
+    "iconBg": "#DC143C"
+  },
+  {
+    "id": 5,
+    "degree": "High School",
+    "school": "Khaitan Public School",
+    "date": "2008 - 2019",
+    "grade": "Grade: 93/100",
+    "description": "Completed high school education with distinction.",
+    "icon": "/khaitan.jpeg",
+    "iconBg": "#FFD700"
   }
 ]
-
-  

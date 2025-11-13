@@ -5,52 +5,106 @@
     "company": "UF Lastinger Center for Learning",
     "date": "Feb 2025 - Present",
     "description": "Full-time software developer at the UF Lastinger Center for Learning in Gainesville, Florida, contributing to educational technology solutions.",
-    "icon": "/lastingercenter_logo.jpeg",
-    "iconBg": "#FA4616"
+    "icon": "/UF.png",
+    "iconBg": "#FA4616",
+    "type": "Full-time",
+    "techStack": ["TypeScript", "SQL", "Azure", "React", "C#", ".NET"],
+    "highlights": []
   },
   {
     "id": 2,
     "title": "Full Stack AI Engineer",
     "company": "Unified Accessibility LLC",
     "date": "Feb 2025 - Present",
-    "description": "Engineered LLM-powered automation for accessibility audits, optimizing prompts to test 80+ WCAG guidelines and developing a Mendix app to visualize results and streamline testing.",
+    "description": "Built full-stack WCAG-compliant platform with Next.js, Django, and PostgreSQL. Engineered AI-driven batch-processing engine using Celery for automated accessibility audits. Implemented Playwright-based automation for DOM analysis and WCAG validation, reducing manual review time by 50%.",
     "icon": "/UA.jpeg",
-    "iconBg": "#6b7c93"
+    "iconBg": "#6b7c93",
+    "type": "Full-time",
+    "techStack": ["Django", "Next.js", "TypeScript", "PostgreSQL", "AI", "Playwright", "Celery", "Python"],
+    "highlights": ["↓50% review time", "WCAG compliant"]
   },
   {
     "id": 3,
-    "title": "Data Science Researcher",
+    "title": "Research Assistant",
     "company": "Tea Lab @ University of Florida",
-    "date": "Jun 2024 - Jan 2025",
-    "description": "Developed pipelines and deep learning models for predictive analysis. Enhanced real-world data representations using LSTMs and VAEs.",
+    "date": "Jun 2024 - Dec 2024",
+    "description": "Enhanced rocket dynamics accuracy by 10% through advanced simulations in Gazebo using ROS2, ROSFlight, and ROSPlane. Automated simulation workflows reducing setup time by 30% and saving 50+ man-hours. Developed LSTM model for predictive analysis, increasing simulation efficiency by 25%.",
     "icon": "/teaLab.jpg",
-    "iconBg": "#4b6cb7"
+    "iconBg": "#4b6cb7",
+    "type": "Research",
+    "techStack": ["Python", "ROS2", "Gazebo", "LSTM", "ROSFlight", "ROSPlane", "ML"],
+    "highlights": ["↑10% accuracy", "↓30% setup time", "↑25% efficiency"]
   },
   {
     "id": 4,
-    "title": "Software Developer/ML Engineer Intern",
-    "company": "Affekta LLC",
-    "date": "May 2024 - August 2024",
-    "description": "Built a React-based web app deployed on Azure, integrating gamification with skill trees and story-driven features via OpenAI. Developed APIs for CRUD operations using PostgreSQL.",
-    "icon": "/affekta.png",
-    "iconBg": "#6b7c93"
-  },
-  {
-    "id": 5,
     "title": "Graduate Teaching Assistant",
     "company": "UF Herbert Wertheim College of Engineering",
     "date": "Jan 2024 - Dec 2024",
     "description": "Teaching Assistant for Operating Systems (COP4600), Computer Organization (CDA3101), and Senior Design Project (CIS4914). Designed automated grading scripts reducing workload by 50%, provided personalized guidance to students, and collaborated with instructors to improve learning materials.",
-    "icon": "/UF.png",
-    "iconBg": "#4b6cb7"
+    "icon": "/uf_herbert_wertheim_college_of_engineering_logo.jpeg",
+    "iconBg": "#0021A5",
+    "type": "Teaching",
+    "techStack": [],
+    "highlights": ["↓50% workload"]
+  },
+  {
+    "id": 5,
+    "title": "Software Engineer Trainee & Intern",
+    "company": "Global Education Ltd.",
+    "date": "Feb 2022 - May 2023",
+    "description": "Architected and deployed an innovative Learning Management System, elevating remote education for various academic institutions and boosting student engagement by 40%. Executed mobile-first approach, boosting mobile revenue by 50%. Developed multi-tier 'Proctor Quiz' dashboard to minimize cheating by 80%, with features like private file sharing, graph reporting, and automated checks. Tech Stack: React, TypeScript, NestJS/NodeJS, MongoDB, CSS, Bootstrap, Tailwind.",
+    "icon": "/global.jpeg",
+    "iconBg": "#F5A623",
+    "type": "Internship",
+    "techStack": ["React", "TypeScript", "NestJS", "MongoDB", "Tailwind"],
+    "highlights": ["↑40% engagement", "↑50% mobile revenue", "↓80% cheating"]
   },
   {
     "id": 6,
-    "title": "Data Science Intern",
-    "company": "To The New Pvt. Ltd.",
-    "date": "June 2022 - August 2022",
-    "description": "Applied NLP and ML techniques for sentiment analysis. Streamlined data scraping and analysis for impactful projects.",
-    "icon": "/TTN.png",
-    "iconBg": "#6b7c93"
+    "title": "Research Internship",
+    "company": "Georgia Institute of Technology",
+    "date": "Aug 2022 - Dec 2022",
+    "description": "Collaborated with Prof. Frank Li and Dr. Dhruv Kuchhal, contributing to a research paper that received a best paper nomination. Analyzed over 90 websites, improving the methodology's accuracy by 50%. Examined various parameters including third-party dependencies, certificates, headers, and security parameters using Python libraries like BeautifulSoup, regex, and NumPy.",
+    "icon": "/georgia_institute_of_technology_logo.jpeg",
+    "iconBg": "#B3A369",
+    "type": "Research",
+    "techStack": ["Python", "BeautifulSoup", "NumPy"],
+    "highlights": ["↑50% accuracy", "90+ websites analyzed"]
+  },
+  {
+    "id": 7,
+    "title": "Co-Founder",
+    "company": "HyprClub",
+    "date": "Oct 2021 - Apr 2022",
+    "description": "Co-founded a 5-member team to build a mobile-friendly NFT marketplace using React.js, Node.js, and Solidity. Spearheaded the implementation of an Admin Dashboard, resulting in a 70% increase in user engagement. Developed user-centric features such as dark mode, login/signup, and profile modification, achieving an 80% improvement in user experience. Utilized Redux for state management and leveraged Solidity for minting NFTs.",
+    "icon": "/hypr.jpeg",
+    "iconBg": "#000000",
+    "type": "Founder",
+    "techStack": ["React", "Node.js", "Solidity", "Redux", "Web3"],
+    "highlights": ["↑70% engagement", "↑80% UX improvement"]
+  },
+  {
+    "id": 8,
+    "title": "Web Developer",
+    "company": "Oriole Entertainment",
+    "date": "Sep 2021 - Oct 2021",
+    "description": "Engineered a comedy show website with ReactJS, attracting 12k+ Instagram followers and increasing user base by 75%. Developed a one-click ticketing platform and integrated advanced features like profile management and advertisement banners. Utilized Node.js, Express.js, and JavaScript to streamline ticket purchases and enhance user functionality.",
+    "icon": "/oriole.jpeg",
+    "iconBg": "#FFFFFF",
+    "type": "Internship",
+    "techStack": ["React", "Node.js", "Express.js", "JavaScript"],
+    "highlights": ["12k+ followers", "↑75% user base"]
+  },
+  {
+    "id": 9,
+    "title": "Project Coordinator & Web Developer Intern",
+    "company": "Sahu Technologies",
+    "date": "May 2021 - Jun 2021",
+    "description": "Served as Program Coordinator managing 30+ interns, providing guidance and support for their projects. Concurrently completed Web Developer Internship and received Subject Expert Certification in web development. Demonstrated leadership and technical skills in HTML, CSS, and Bootstrap.",
+    "icon": "/sahutechnologies_logo.jpeg",
+    "iconBg": "#1E5BA8",
+    "type": "Internship",
+    "techStack": ["HTML", "CSS", "Bootstrap"],
+    "highlights": ["30+ interns managed", "🎓 Certified"]
   }
 ]

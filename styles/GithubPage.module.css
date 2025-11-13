@@ -1,58 +1,451 @@
-.user {
-  background: var(--article-bg);
-  padding: 1.5rem 1rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100px;
-  margin-bottom: 1.5rem;
+/* GitHub Page Styles */
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;600&display=swap');
+
+/* Page Container with Padding */
+.pageContainer {
+  padding: 2rem;
 }
 
-.user > div {
+@media screen and (max-width: 768px) {
+  .pageContainer {
+    padding: 1rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .pageContainer {
+    padding: 0.75rem;
+  }
+}
+
+/* Loader Container */
+.loaderContainer {
   display: flex;
-  flex-wrap: wrap;
-  text-align: center;
-  justify-content: center;
   align-items: center;
-  border-right: 2px solid var(--accent-color);
-  padding: 0 1rem;
+  justify-content: center;
+  min-height: 80vh;
+  background: var(--main-bg);
+}
+
+.loader {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  padding: 3rem;
+  background: rgba(255, 255, 255, 0.02);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 16px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+  animation: fadeIn 0.3s ease-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.githubLogo {
+  position: relative;
+  width: 64px;
+  height: 64px;
+  color: var(--accent-color);
+}
+
+.spinningLogo {
+  animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.loaderText {
+  font-size: 1.2rem;
+  color: var(--text-color);
+  font-weight: 500;
+  font-family: 'Fira Code', monospace;
+}
+
+.loaderBar {
+  width: 200px;
+  height: 4px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 2px;
+  overflow: hidden;
+  position: relative;
+}
+
+.loaderProgress {
   height: 100%;
+  background: linear-gradient(90deg, var(--accent-color), #764ba2);
+  border-radius: 2px;
+  animation: progress 1.5s ease-in-out infinite;
 }
 
-.user > div:last-child {
-  border-right: none;
+@keyframes progress {
+  0% {
+    width: 0%;
+    transform: translateX(0);
+  }
+  50% {
+    width: 100%;
+    transform: translateX(0);
+  }
+  100% {
+    width: 100%;
+    transform: translateX(100%);
+  }
+}
+
+/* Profile Header */
+.profileHeader {
+  background: rgba(255, 255, 255, 0.03);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 16px;
+  padding: 2rem;
+  margin-bottom: 2rem;
+  animation: fadeInUp 0.6s ease-out;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.profileInfo {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.avatarWrapper {
+  position: relative;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background: transparent;
+  padding: 0;
+  overflow: hidden;
+}
+
+.avatar {
+  border-radius: 50%;
+  border: 3px solid var(--accent-color);
+  box-shadow: 0 8px 32px rgba(102, 126, 234, 0.3);
+  background: transparent !important;
+  object-fit: cover;
+  /* Remove white/light backgrounds */
+  mix-blend-mode: multiply;
+  filter: contrast(1.2) brightness(1.1);
+}
+
+.userDetails {
+  flex: 1;
 }
 
 .username {
-  margin-left: 10px;
+  font-size: 2rem;
+  font-weight: 700;
+  margin: 0 0 0.5rem 0;
+  color: #ffffff;
 }
 
-.container {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+.bio {
+  font-size: 1.1rem;
+  color: #b0b0b0;
+  margin: 0.5rem 0 1rem 0;
+  line-height: 1.6;
+}
+
+.profileLinks {
+  display: flex;
   gap: 1.5rem;
-  margin: 1.5rem 0;
+  font-size: 0.95rem;
+  color: #888;
 }
 
-.title {
+.profileLinks a {
+  color: var(--accent-color);
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.profileLinks a:hover {
+  color: #667eea;
+}
+
+/* Stats Grid */
+.statsGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.statCard {
+  background: rgba(255, 255, 255, 0.03);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 12px;
+  padding: 1.5rem;
+  text-align: center;
+  transition: all 0.3s ease;
+  animation: fadeInScale 0.6s ease-out both;
+}
+
+@keyframes fadeInScale {
+  from {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.statCard:hover {
+  transform: translateY(-5px);
+  border-color: var(--accent-color);
+  box-shadow: 0 10px 30px rgba(102, 126, 234, 0.3);
+}
+
+.statIcon {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.statValue {
+  font-size: 2.5rem;
+  font-weight: 700;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  margin: 0.5rem 0;
+}
+
+.statLabel {
+  font-size: 0.9rem;
+  color: #888;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+/* Section */
+.section {
+  margin-bottom: 2.5rem;
+  animation: fadeInUp 0.6s ease-out;
+}
+
+.sectionTitle {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #ffffff;
   margin-bottom: 1.5rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.icon {
+  font-size: 1.8rem;
+}
+
+/* Language Stats */
+.languageGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+}
+
+.languageCard {
+  background: rgba(255, 255, 255, 0.03);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 12px;
+  padding: 1.2rem;
+  transition: all 0.3s ease;
+}
+
+.languageCard:hover {
+  transform: translateY(-3px);
+  border-color: rgba(255, 255, 255, 0.2);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+.languageName {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #ffffff;
+  margin-bottom: 0.8rem;
+}
+
+.languageBar {
+  height: 8px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  overflow: hidden;
+  margin-bottom: 0.5rem;
+}
+
+.languageProgress {
+  height: 100%;
+  border-radius: 10px;
+  transition: width 0.6s ease;
+}
+
+.languagePercentage {
+  font-size: 0.85rem;
+  color: #888;
+  font-family: 'Fira Code', monospace;
+}
+
+/* Pinned Repos */
+.pinnedRepos {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1.5rem;
+}
+
+.noRepos {
+  text-align: center;
+  padding: 2rem;
+  color: #888;
+  font-style: italic;
+}
+
+/* Contributions */
+.contributions {
+  background: rgba(255, 255, 255, 0.03);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 12px;
+  padding: 2rem;
+  overflow-x: auto;
 }
 
 .contributions article {
   width: 100% !important;
 }
 
-@media screen and (max-width: 900px) {
-  .user h3 {
-    font-size: 1rem;
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .profileInfo {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .username {
+    font-size: 1.8rem;
+  }
+
+  .statsGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .languageGrid {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  }
+
+  .pinnedRepos {
+    grid-template-columns: 1fr;
   }
 }
 
-@media screen and (max-width: 600px) {
-  .user h3 {
-    font-size: 14px;
+@media (max-width: 768px) {
+  .profileHeader {
+    padding: 1.5rem;
   }
+
   .username {
-    display: none;
+    font-size: 1.5rem;
+  }
+
+  .bio {
+    font-size: 1rem;
+  }
+
+  .profileLinks {
+    flex-direction: column;
+    gap: 0.8rem;
+  }
+
+  .statsGrid {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
+  .statValue {
+    font-size: 2rem;
+  }
+
+  .sectionTitle {
+    font-size: 1.3rem;
+  }
+
+  .languageGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .contributions {
+    padding: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .profileHeader {
+    padding: 1rem;
+  }
+
+  .profileInfo {
+    gap: 1rem;
+  }
+
+  .username {
+    font-size: 1.3rem;
+  }
+
+  .bio {
+    font-size: 0.9rem;
+  }
+
+  .statIcon {
+    font-size: 1.5rem;
+  }
+
+  .statValue {
+    font-size: 1.8rem;
+  }
+
+  .statLabel {
+    font-size: 0.8rem;
+  }
+
+  .sectionTitle {
+    font-size: 1.2rem;
+  }
+
+  .icon {
+    font-size: 1.5rem;
   }
 }

@@ -1,58 +1,814 @@
-/* About.module.css */
+/* About.module.css - VS Code HTML Editor Theme */
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;600&display=swap');
+
+/* Container */
 .container {
-    display: flex;
-    flex-wrap: wrap;
-    padding: 20px;
-    border-radius: 8px;
+  min-height: 90vh;
+  background: #1e1e1e;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: all 0.8s ease-out;
+  font-family: 'Fira Code', monospace;
+  display: flex;
+  flex-direction: column;
+}
+
+.container.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Editor Content */
+.editorContent {
+  flex: 1;
+  overflow-y: auto;
+  background: #1e1e1e;
+  padding: 1rem 0;
+}
+
+.htmlDocument {
+  max-width: 1600px;
+  margin: 0 auto;
+}
+
+/* HTML Lines */
+.htmlLine {
+  display: flex;
+  align-items: flex-start;
+  min-height: 1.5rem;
+  padding: 0.1rem 0;
+  transition: background 0.2s ease;
+}
+
+.htmlLine:hover {
+  background: rgba(255, 255, 255, 0.03);
+}
+
+.lineNumber {
+  min-width: 50px;
+  padding: 0 1rem;
+  text-align: right;
+  color: #858585;
+  font-size: 0.85rem;
+  user-select: none;
+}
+
+/* HTML Syntax Highlighting */
+.tag {
+  color: #808080;
+}
+
+.tagName {
+  color: #569cd6;
+}
+
+.attribute {
+  color: #9cdcfe;
+}
+
+.operator {
+  color: #d4d4d4;
+}
+
+.string {
+  color: #ce9178;
+}
+
+.content {
+  color: #d4d4d4;
+}
+
+.comment {
+  color: #6a9955;
+  font-style: italic;
+}
+
+.indent {
+  white-space: pre;
+}
+
+/* Status Bar */
+.statusBar {
+  background: #007acc;
+  color: #ffffff;
+  padding: 0.4rem 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.75rem;
+  font-weight: 500;
+  border-top: 1px solid #0098ff;
+}
+
+.statusLeft,
+.statusRight {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+.statusItem {
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+  color: #ffffff;
+}
+
+.statusIcon {
+  font-size: 0.9rem;
+}
+
+/* Scrollbar Styling */
+.editorContent::-webkit-scrollbar {
+  width: 12px;
+}
+
+.editorContent::-webkit-scrollbar-track {
+  background: #1e1e1e;
+}
+
+.editorContent::-webkit-scrollbar-thumb {
+  background: #424242;
+  border-radius: 6px;
+}
+
+.editorContent::-webkit-scrollbar-thumb:hover {
+  background: #4e4e4e;
+}
+
+/* Hero Section */
+.heroSection {
+  display: grid;
+  grid-template-columns: 1fr 1.5fr;
+  gap: 3rem;
+  margin: 1.5rem 0 2rem 50px;
+  align-items: center;
+  animation: fadeInUp 0.6s ease-out both;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
   }
-  
-  .textSection {
-    /* flex-grow: 3; */
-    flex-basis: 50%;
-    padding: 20px;
+  to {
+    opacity: 1;
+    transform: translateY(0);
   }
-  
-  .imageSection {
-    /* flex-grow: 2; */
-    flex-basis: 50%;
-    display: flex;
-    align-items: flex-start;
+}
+
+.imageContainer {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  animation: fadeInLeft 0.8s ease-out;
+}
+
+@keyframes fadeInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.imageWrapper {
+  position: relative;
+  width: 300px;
+  height: 300px;
+  border-radius: 20px;
+  overflow: hidden;
+  border: 3px solid rgba(102, 126, 234, 0.3);
+  box-shadow: 0 10px 40px rgba(102, 126, 234, 0.2);
+  transition: all 0.3s ease;
+}
+
+.imageWrapper:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 50px rgba(102, 126, 234, 0.4);
+  border-color: rgba(102, 126, 234, 0.6);
+}
+
+.profileImage {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+  filter: contrast(1.05) saturate(1.1);
+}
+
+.imageWrapper:hover .profileImage {
+  transform: scale(1.05);
+}
+
+.imageGlow {
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: radial-gradient(circle, rgba(102, 126, 234, 0.08) 0%, transparent 70%);
+  animation: rotateGlow 8s linear infinite;
+}
+
+@keyframes rotateGlow {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.statusBadge {
+  margin-top: 1.5rem;
+  padding: 0.8rem 1.5rem;
+  background: rgba(39, 201, 63, 0.1);
+  border: 1px solid rgba(39, 201, 63, 0.3);
+  border-radius: 25px;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.9rem;
+  color: #27c93f;
+  font-weight: 500;
+}
+
+.statusDot {
+  width: 8px;
+  height: 8px;
+  background: #27c93f;
+  border-radius: 50%;
+  animation: pulse 2s ease-in-out infinite;
+}
+
+@keyframes pulse {
+  0%, 100% {
+    opacity: 1;
+    box-shadow: 0 0 0 0 rgba(39, 201, 63, 0.7);
+  }
+  50% {
+    opacity: 0.7;
+    box-shadow: 0 0 0 10px rgba(39, 201, 63, 0);
+  }
+}
+
+.heroContent {
+  animation: fadeInRight 0.8s ease-out;
+}
+
+@keyframes fadeInRight {
+  from {
+    opacity: 0;
+    transform: translateX(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.codeComment {
+  font-family: 'Fira Code', monospace;
+  color: #6a9955;
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
+
+.heroTitle {
+  font-family: 'Fira Code', monospace;
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  line-height: 1.4;
+}
+
+.keyword {
+  color: #569cd6;
+}
+
+.variable {
+  color: #9cdcfe;
+}
+
+.operator {
+  color: #d4d4d4;
+}
+
+.string {
+  color: #ce9178;
+}
+
+.heroDescription {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: #d0d0d0;
+  margin-bottom: 2rem;
+}
+
+.highlight {
+  color: #c586c0;
+  font-weight: 600;
+}
+
+.highlightYellow {
+  color: #dcdcaa;
+  font-weight: 600;
+}
+
+.highlightGreen {
+  color: #4ec9b0;
+  font-weight: 600;
+}
+
+.quickStats {
+  display: flex;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.quickStat {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.quickStatValue {
+  font-size: 2.5rem;
+  font-weight: 700;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.quickStatLabel {
+  font-size: 0.85rem;
+  color: #888;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+/* Section Styles */
+.section {
+  margin: 1.5rem 0 2rem 50px;
+  background: rgba(255, 255, 255, 0.02);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  border-left: 3px solid #569cd6;
+  border-radius: 12px;
+  padding: 2rem;
+  animation: slideInRight 0.6s ease-out both;
+}
+
+@keyframes slideInRight {
+  from {
+    opacity: 0;
+    transform: translateX(-30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.sectionHeader {
+  margin-bottom: 2rem;
+}
+
+.tag {
+  font-family: 'Fira Code', monospace;
+  color: #569cd6;
+  font-size: 1.1rem;
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+.sectionTitle {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #ffffff;
+  margin-left: 1rem;
+}
+
+.sectionFooter {
+  margin-top: 2rem;
+}
+
+/* Skills Section */
+.skillsCategory {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 2rem;
+  flex-wrap: wrap;
+}
+
+.categoryBtn {
+  padding: 0.7rem 1.5rem;
+  background: rgba(255, 255, 255, 0.05);
+  border: 2px solid rgba(255, 255, 255, 0.1);
+  border-radius: 8px;
+  color: #d0d0d0;
+  font-size: 0.95rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.categoryBtn:hover {
+  background: rgba(255, 255, 255, 0.08);
+  border-color: rgba(255, 255, 255, 0.2);
+  transform: translateY(-2px);
+}
+
+.categoryBtn.active {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  border-color: #667eea;
+  color: #ffffff;
+  box-shadow: 0 5px 20px rgba(102, 126, 234, 0.4);
+}
+
+.skillsGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+}
+
+.skillCard {
+  background: rgba(255, 255, 255, 0.03);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 12px;
+  padding: 1.5rem;
+  transition: all 0.3s ease;
+}
+
+.skillCard:hover {
+  background: rgba(255, 255, 255, 0.05);
+  border-color: rgba(255, 255, 255, 0.2);
+  transform: translateY(-3px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+.skillHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.8rem;
+}
+
+.skillName {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #ffffff;
+}
+
+.skillPercent {
+  font-size: 0.9rem;
+  color: #888;
+  font-family: 'Fira Code', monospace;
+}
+
+.skillBar {
+  height: 8px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.skillProgress {
+  height: 100%;
+  border-radius: 10px;
+  animation: growBar 1s ease-out forwards;
+}
+
+@keyframes growBar {
+  from {
+    width: 0 !important;
+  }
+  to {
+    width: var(--skill-width);
+  }
+}
+
+/* Journey Section */
+.journeyContent {
+  background: rgba(255, 255, 255, 0.03);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 12px;
+  padding: 2rem;
+}
+
+.journeyText {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: #d0d0d0;
+  margin-bottom: 1.5rem;
+}
+
+.journeyText:last-child {
+  margin-bottom: 0;
+}
+
+/* Interests Grid */
+.interestsGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1.5rem;
+}
+
+.interestCard {
+  background: rgba(255, 255, 255, 0.03);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 12px;
+  padding: 2rem 1.5rem;
+  text-align: center;
+  transition: all 0.3s ease;
+  animation: fadeInScale 0.6s ease-out both;
+}
+
+@keyframes fadeInScale {
+  from {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.interestCard:hover {
+  background: rgba(255, 255, 255, 0.05);
+  border-color: rgba(102, 126, 234, 0.5);
+  transform: translateY(-5px);
+  box-shadow: 0 10px 30px rgba(102, 126, 234, 0.2);
+}
+
+.interestIcon {
+  font-size: 3rem;
+  display: block;
+  margin-bottom: 1rem;
+}
+
+.interestTitle {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #ffffff;
+  margin-bottom: 0.5rem;
+}
+
+.interestDesc {
+  font-size: 0.9rem;
+  color: #888;
+  line-height: 1.4;
+}
+
+/* Facts Grid */
+.factsGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1rem;
+}
+
+.factCard {
+  background: linear-gradient(135deg, rgba(255, 215, 0, 0.1), rgba(255, 165, 0, 0.1));
+  border: 1px solid rgba(255, 215, 0, 0.3);
+  border-radius: 12px;
+  padding: 1.2rem 1.5rem;
+  color: #ffd700;
+  font-size: 0.95rem;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  animation: fadeInScale 0.6s ease-out both;
+}
+
+.factCard:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(255, 215, 0, 0.2);
+}
+
+/* CTA Section */
+.ctaSection {
+  background: rgba(255, 255, 255, 0.03);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-left: 3px solid #4ec9b0;
+  border-radius: 12px;
+  padding: 2rem;
+  text-align: center;
+  margin: 1.5rem 0 2rem 50px;
+  animation: slideInRight 0.6s ease-out both;
+}
+
+.ctaText {
+  font-size: 1.2rem;
+  line-height: 1.8;
+  color: #d0d0d0;
+  margin-bottom: 2rem;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.ctaSubtext {
+  font-family: 'Fira Code', monospace;
+  font-size: 1rem;
+  line-height: 1.8;
+  color: #d0d0d0;
+  background: rgba(0, 0, 0, 0.3);
+  border-radius: 8px;
+  padding: 1.5rem;
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .heroSection {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    margin-left: 30px;
+  }
+
+  .section,
+  .ctaSection {
+    margin-left: 30px;
+    margin-right: 10px;
+  }
+
+  .imageContainer {
+    order: -1;
+    margin-bottom: 2rem;
+  }
+
+  .quickStats {
     justify-content: center;
-    padding: 40px;
-    
-    /* max-width: 60%; */
-    /* max-width: 600px; */
-    
   }
-  
-  @media (max-width: 1024px) {
-    .container {
-      flex-direction: column;
-    }
-    .textSection, .imageSection {
-      flex-basis: 100%;
-      margin-right: 10px;
-      
-      
-    }
-    .imageSection {
-        max-width: 500px;
-        align-items: center;
-        order: -1;
-        padding-top: 50px; /* This line will move the image section above the text section */
-        padding-bottom: 50px; /* This line will move the image section above the text section */
-      }
-      .textSection {
-        order: 1;
-        margin-right: 90px; /* Optional, as text will be below by default, but added for clarity */
-      }
+
+  .skillsGrid {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   }
-  
-  @media (max-width: 900px) {
-    
-    .textSection {
-        
-        margin-right: 10px; /* This line will move the image section above the text section */
-      }
-      
+
+  .lineNumber {
+    min-width: 40px;
+    padding: 0 0.5rem;
+    font-size: 0.75rem;
   }
+}
+
+@media (max-width: 768px) {
+  .heroSection {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+
+  .section,
+  .ctaSection {
+    margin-left: 10px;
+    margin-right: 10px;
+    padding: 1.5rem;
+  }
+
+  .heroTitle {
+    font-size: 1.5rem;
+  }
+
+  .heroDescription {
+    font-size: 1rem;
+  }
+
+  .imageWrapper {
+    width: 250px;
+    height: 250px;
+  }
+
+  .statusBar {
+    flex-direction: column;
+    gap: 0.5rem;
+    padding: 0.6rem 0.8rem;
+  }
+
+  .statusLeft,
+  .statusRight {
+    gap: 0.5rem;
+    font-size: 0.7rem;
+  }
+
+  .heroContent {
+    text-align: center;
+  }
+
+  .quickStats {
+    flex-wrap: wrap;
+    gap: 1.5rem;
+  }
+
+  .quickStatValue {
+    font-size: 2rem;
+  }
+
+  .sectionTitle {
+    font-size: 1.5rem;
+  }
+
+  .skillsCategory {
+    justify-content: center;
+  }
+
+  .categoryBtn {
+    padding: 0.6rem 1.2rem;
+    font-size: 0.85rem;
+  }
+
+  .skillsGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .interestsGrid {
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  }
+
+  .factsGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .journeyContent {
+    padding: 1.5rem;
+  }
+
+  .journeyText {
+    font-size: 1rem;
+  }
+
+  .ctaSection {
+    padding: 2rem 1.5rem;
+  }
+
+  .ctaText {
+    font-size: 1rem;
+  }
+
+  .ctaSubtext {
+    font-size: 0.85rem;
+    padding: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .heroSection {
+    margin-left: 5px;
+    margin-right: 5px;
+  }
+
+  .section,
+  .ctaSection {
+    margin-left: 5px;
+    margin-right: 5px;
+    padding: 1rem;
+  }
+
+  .htmlLine {
+    font-size: 0.75rem;
+  }
+
+  .lineNumber {
+    min-width: 35px;
+    font-size: 0.7rem;
+  }
+
+  .imageWrapper {
+    width: 200px;
+    height: 200px;
+  }
+
+  .heroTitle {
+    font-size: 1.2rem;
+  }
+
+  .quickStats {
+    gap: 1rem;
+  }
+
+  .quickStatValue {
+    font-size: 1.8rem;
+  }
+
+  .interestIcon {
+    font-size: 2rem;
+  }
+
+  .interestTitle {
+    font-size: 1rem;
+  }
+
+  .interestDesc {
+    font-size: 0.85rem;
+  }
+}
