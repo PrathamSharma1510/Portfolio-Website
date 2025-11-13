@@ -54,7 +54,7 @@ const AboutPage = () => {
       
       {/* Image Section with less growth on flex-grow */}
       <div className={styles.imageSection}>
-        <img src="/me.jpg" alt="Pratham Sharma" style={{ maxWidth: '100%', height: 'auto', borderRadius: '10px' }} />
+        <img src="/me.jpeg" alt="Pratham Sharma" style={{ maxWidth: '100%', height: 'auto', borderRadius: '10px' }} />
       </div>
     </div>
   );
