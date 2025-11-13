@@ -1,0 +1,31 @@
+[
+  {
+    "id": 1,
+    "degree": "Master of Science in Computer Science",
+    "school": "University of Florida",
+    "date": "August 2023 - December 2024",
+    "description": "Specialized coursework in NLP, Data Science, and Data Engineering.",
+    "icon": "/UF.png",
+    "iconBg": "#2A9D8F"
+  },
+  {
+    "id": 2,
+    "degree": "CISE Senior Certificate Program",
+    "school": "University of Florida",
+    "date": "January 2023 - May 2023",
+    "description": "Distinguished coursework in Data Science and Advanced Data Structures.",
+    "icon": "/UF.png",
+    "iconBg": "#2A9D8F"
+  },
+  {
+    "id": 3,
+    "degree": "Bachelor of Technology in Computer Science and Engineering",
+    "school": "Manipal University Jaipur",
+    "date": "August 2019 - July 2023",
+    "description": "Focused on Deep Learning, NLP, and Computer Networks.",
+    "icon": "/muj.png",
+    "iconBg": "#ffffff"
+  }
+]
+
+  

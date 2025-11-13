@@ -1,0 +1,55 @@
+import styles from '../styles/ContactCode.module.css';
+
+const contactItems = [
+  {
+    social: 'email',
+    link: 'sharmapratham1510@gmail.com',
+    href: 'mailto:sharmapratham1510@gmail.com',
+  },
+  {
+    social: 'phone',
+    link: '+1 (352) 328-0436',
+    href: 'tel:+13523280436',
+  },
+  {
+    social: 'github',
+    link: 'PrathamSharma1510',
+    href: 'https://github.com/PrathamSharma1510',
+  },
+  {
+    social: 'linkedin',
+    link: 'pratham-sharma',
+    href: 'https://www.linkedin.com/in/pratham-sharma-9a15271b7/',
+  },
+];
+
+const ContactCode = () => {
+  return (
+    <div className={styles.code}>
+      <p className={styles.line}>
+        <span className={styles.className}>.socials</span> &#123;
+      </p>
+      {contactItems.slice(0, 8).map((item, index) => (
+        <p className={styles.line} key={index}>
+          &nbsp;&nbsp;&nbsp;{item.social}:{' '}
+          <a href={item.href} target="_blank" rel="noopener">
+            {item.link}
+          </a>
+          ;
+        </p>
+      ))}
+      {contactItems.slice(8, contactItems.length).map((item, index) => (
+        <p className={styles.line} key={index}>
+          &nbsp;&nbsp;{item.social}:{' '}
+          <a href={item.href} target="_blank" rel="noopener">
+            {item.link}
+          </a>
+          ;
+        </p>
+      ))}
+      <p className={styles.line}>&#125;</p>
+    </div>
+  );
+};
+
+export default ContactCode;

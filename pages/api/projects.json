@@ -1,0 +1,61 @@
+[
+  {
+    "id": 1,
+    "name": "NormanPD Incident Insight Visualizer",
+    "image": "/normanpd.png",
+    "description": "A web platform to process, augment, and visualize police incident reports with 7 detailed visualizations and downloadable data insights.",
+    "tags": ["python", "postgresql", "flask", "gcp"],
+    "source_code": "https://github.com/Vveanta/norman-incident-vis",
+    "demo": "https://norman-pd-visualizer-b3fygtgdf9hycmbn.eastus-01.azurewebsites.net/"
+  },
+  {
+    "id": 2,
+    "name": "Clinical Trial Recruitment",
+    "image": "/clinical_recruit.png", 
+    "description": "Analyzed Reddit data with sentiment analysis and AI-generated personalized messages for recruiting participants in diabetes-related clinical trials.",
+    "tags": ["python", "praw", "spacy", "openai", "google-cloud-nlp"],
+    "source_code": "https://github.com/Vveanta/clinical_data_analyses"
+  },
+  {
+    "id": 3,
+    "name": "Fine-tune Weak LLMs for Accurate Extraction of SDOH",
+    "image": "/sdoh.jpg",
+    "description": "Developed and fine-tuned a GPT-2 model to extract SDoH from clinical records, achieving 85.56% accuracy and outperforming state-of-the-art methods.",
+    "tags": ["nlp", "pytorch", "openai", "gemma", "t5", "GenAI"],
+    "source_code": "https://github.com/Vveanta/NLP-Project"
+  },
+  {
+    "id": 4,
+    "name": "Data Censoror",
+    "image": "/censoring.png",
+    "description": "Automates sensitive data redaction using regex, spaCy, and Google Cloud NLP, ensuring privacy in documents such as police reports and medical records.",
+    "tags": ["python", "google-cloud-nlp", "data-engineering", "spacy"],
+    "source_code": "https://github.com/Vveanta/Data_Censoror"
+  },
+  {
+    "id": 5,
+    "name": "Design of Efficient Classification Model for Paramecium and Hydra",
+    "image": "/microorg.png",
+    "description": "Improved classification accuracy using GANs to balance datasets and Inception model for superior performance with 96.49% accuracy.",
+    "tags": ["deep-learning", "tensorflow", "Gans"],
+    "source_code": "https://github.com/Vveanta/Microorganism-Classification_using_GANs_and_Deep_learning",
+    "paper": "https://link.springer.com/article/10.1007/s43538-024-00247-4"
+  },
+  {
+    "id": 6,
+    "name": "Gator Taxi System Project",
+    "image": "/gator_taxi.png",
+    "description": "Optimized ride-hailing operations using advanced data structures, reducing request management time complexity from O(n) to O(log n).",
+    "tags": ["python", "algorithms", "data-structures"],
+    "source_code": "https://github.com/Vveanta/GatorTaxiSystem"
+  },
+  {
+    "id": 7,
+    "name": "Portfolio",
+    "image": "/portfolio.png",
+    "description": "A portfolio website inspired by VSCode, designed to showcase my projects, experiences, education, and skills to fellow developers and potential recruiters. ",
+    "tags": ["react", "next", "css-modules"],
+    "source_code": "https://github.com/Vveanta/portfolio.git",
+    "demo": "https://vedanshmaheshwari.netlify.app"
+  }
+]
