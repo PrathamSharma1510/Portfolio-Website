@@ -1,61 +1,53 @@
 [
   {
     "id": 1,
-    "name": "NormanPD Incident Insight Visualizer",
+    "name": "Norman PD Incident Data Pipeline and Visualization",
     "image": "/normanpd.png",
-    "description": "A web platform to process, augment, and visualize police incident reports with 7 detailed visualizations and downloadable data insights.",
-    "tags": ["python", "postgresql", "flask", "gcp"],
-    "source_code": "https://github.com/Vveanta/norman-incident-vis",
-    "demo": "https://norman-pd-visualizer-b3fygtgdf9hycmbn.eastus-01.azurewebsites.net/"
+    "description": "Automated data pipeline extracting Norman PD incident reports from PDFs, geocoding locations using Google Maps API, determining geographic distribution, and integrating historical weather data. Features Streamlit visualization dashboard for analyzing incident patterns by time, location, and weather conditions to support public safety resource allocation.",
+    "tags": ["Python", "Pandas", "Streamlit", "Google Maps API", "PyMuPDF", "Geopy", "Data Pipeline", "Weather API"],
+    "source_code": "https://github.com/PrathamSharma1510/norman_pd_incident_data_pipeline_and_visualization",
+    "demo": "https://normanpdincidentdatapipelineandvisualization-dmzprvonduhvittrf.streamlit.app/"
   },
   {
     "id": 2,
-    "name": "Clinical Trial Recruitment",
-    "image": "/clinical_recruit.png", 
-    "description": "Analyzed Reddit data with sentiment analysis and AI-generated personalized messages for recruiting participants in diabetes-related clinical trials.",
-    "tags": ["python", "praw", "spacy", "openai", "google-cloud-nlp"],
-    "source_code": "https://github.com/Vveanta/clinical_data_analyses"
+    "name": "Feedback Nexus",
+    "image": "/feedback_nexus.png", 
+    "description": "Anonymous feedback platform with AI-powered insights and real-time analytics. Features customizable surveys, personalized dashboards, unique sharing links, and OpenAI integration for message generation. Built with Next.js, MongoDB, NextAuth authentication, and Recharts visualization. Perfect for educators, HR professionals, and event organizers seeking honest, constructive feedback with complete anonymity.",
+    "tags": ["Next.js", "TypeScript", "MongoDB", "OpenAI", "NextAuth", "Tailwind CSS", "Recharts", "AI", "Framer Motion", "Resend"],
+    "source_code": "https://github.com/PrathamSharma1510/Feedback_Nexus",
+    "demo": "https://feedbacknexus.netlify.app/"
   },
   {
     "id": 3,
-    "name": "Fine-tune Weak LLMs for Accurate Extraction of SDOH",
-    "image": "/sdoh.jpg",
-    "description": "Developed and fine-tuned a GPT-2 model to extract SDoH from clinical records, achieving 85.56% accuracy and outperforming state-of-the-art methods.",
-    "tags": ["nlp", "pytorch", "openai", "gemma", "t5", "GenAI"],
-    "source_code": "https://github.com/Vveanta/NLP-Project"
+    "name": "GatorLibrary Management System",
+    "image": "/gator_library.png",
+    "description": "Library management system using Red-Black Trees for book operations and Binary Min-Heaps for reservations, achieving O(log n) time complexity. Features include book insertion/deletion, borrowing/returning, reservation prioritization, and closest book search. Implements self-balancing tree algorithms with rotation, deletion, and color flip tracking for optimal performance.",
+    "tags": ["Python", "Red-Black Tree", "Binary Min-Heap", "Data Structures", "Algorithms", "Self-Balancing Trees"],
+    "source_code": "https://github.com/PrathamSharma1510/ADS"
   },
   {
     "id": 4,
-    "name": "Data Censoror",
-    "image": "/censoring.png",
-    "description": "Automates sensitive data redaction using regex, spaCy, and Google Cloud NLP, ensuring privacy in documents such as police reports and medical records.",
-    "tags": ["python", "google-cloud-nlp", "data-engineering", "spacy"],
-    "source_code": "https://github.com/Vveanta/Data_Censoror"
+    "name": "NLP-Healers: SDoH Extraction from Clinical Notes",
+    "image": "/nlp_healers.png",
+    "description": "Evaluated language models (GPT-2, GPT-3.5 Turbo, GPT-4 Turbo, Gemma 7B) for extracting Social Determinants of Health from electronic health records. Fine-tuned GPT-2 achieved 85.56% accuracy on SDoH labels and 91.11% on adverse labels, demonstrating NLP's potential in healthcare data extraction and improving healthcare equity through advanced clinical narrative analysis.",
+    "tags": ["NLP", "GPT-2", "GPT-3.5", "GPT-4", "Gemma", "Healthcare", "Machine Learning", "Fine-tuning", "PyTorch", "Clinical Data"],
+    "source_code": "https://github.com/PrathamSharma1510/NLP-Project"
   },
   {
     "id": 5,
-    "name": "Design of Efficient Classification Model for Paramecium and Hydra",
-    "image": "/microorg.png",
-    "description": "Improved classification accuracy using GANs to balance datasets and Inception model for superior performance with 96.49% accuracy.",
-    "tags": ["deep-learning", "tensorflow", "Gans"],
-    "source_code": "https://github.com/Vveanta/Microorganism-Classification_using_GANs_and_Deep_learning",
-    "paper": "https://link.springer.com/article/10.1007/s43538-024-00247-4"
+    "name": "Social13 - Student Housing Platform",
+    "image": "/social13.png",
+    "description": "Student-centric housing search platform for Gainesville designed to simplify apartment hunting for university students. Built with React and Create React App, featuring intuitive property listings, search functionality, and seamless browsing experience. Deployed on Netlify for reliable hosting, helping students find their perfect home effortlessly through a modern, responsive web interface.",
+    "tags": ["React", "JavaScript", "Create React App", "Web Development", "Student Platform", "Housing Search", "Netlify"],
+    "source_code": "https://github.com/archit0712/social13",
+    "demo": "https://social13housing.netlify.app/"
   },
   {
     "id": 6,
-    "name": "Gator Taxi System Project",
-    "image": "/gator_taxi.png",
-    "description": "Optimized ride-hailing operations using advanced data structures, reducing request management time complexity from O(n) to O(log n).",
-    "tags": ["python", "algorithms", "data-structures"],
-    "source_code": "https://github.com/Vveanta/GatorTaxiSystem"
-  },
-  {
-    "id": 7,
-    "name": "Portfolio",
-    "image": "/portfolio.png",
-    "description": "A portfolio website inspired by VSCode, designed to showcase my projects, experiences, education, and skills to fellow developers and potential recruiters. ",
-    "tags": ["react", "next", "css-modules"],
-    "source_code": "https://github.com/Vveanta/portfolio.git",
-    "demo": "https://vedanshmaheshwari.netlify.app"
+    "name": "DeepFakeNet: Deepfake Detection System",
+    "image": "/deepfake.png",
+    "description": "Advanced deepfake detection system using DeeperMesoInception4 model on FaceForensics++ dataset. Implements MTCNN for face detection, preprocessing pipeline converting videos to frames, and achieves 82.08% accuracy in identifying manipulated content. Employs Binary Cross-Entropy Loss and Adam optimizer, effectively detecting digital media manipulation across Deepfakes, Face2Face, FaceSwap, and NeuralTextures techniques.",
+    "tags": ["Deep Learning", "Computer Vision", "MTCNN", "PyTorch", "Deepfake Detection", "CNN", "InceptionV3", "Video Processing", "Machine Learning"],
+    "source_code": "https://github.com/PrathamSharma1510/MLE_project"
   }
 ]

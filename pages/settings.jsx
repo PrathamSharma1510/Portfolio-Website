@@ -114,7 +114,7 @@ const SettingsPage = () => {
               <p className={styles.sectionDescription}>Choose your preferred color theme</p>
               <div className={styles.themesGrid}>
                 {themes.map((theme) => (
-                  <ThemeInfo 
+        <ThemeInfo
                     key={theme.theme}
                     {...theme}
                     isActive={currentTheme === theme.theme}

@@ -50,13 +50,13 @@ const GithubPage = ({ repos, user, stats }) => {
         <div className={styles.profileHeader}>
         <div className={styles.profileInfo}>
           <div className={styles.avatarWrapper}>
-            <Image
-              src={user.avatar_url}
-              className={styles.avatar}
-              alt={user.login}
+          <Image
+            src={user.avatar_url}
+            className={styles.avatar}
+            alt={user.login}
               width={100}
               height={100}
-            />
+          />
           </div>
           <div className={styles.userDetails}>
             <h1 className={styles.username}>{user.name || user.login}</h1>
@@ -121,7 +121,7 @@ const GithubPage = ({ repos, user, stats }) => {
         <div className={styles.pinnedRepos}>
           {repos.length > 0 ? (
             repos.map((repo) => (
-              <RepoCard key={repo.id} repo={repo} />
+          <RepoCard key={repo.id} repo={repo} />
             ))
           ) : (
             <div className={styles.noRepos}>
@@ -137,13 +137,13 @@ const GithubPage = ({ repos, user, stats }) => {
           <span className={styles.icon}>📊</span>
           Contribution Activity
         </h2>
-        <div className={styles.contributions}>
-          <GitHubCalendar
-            username={process.env.NEXT_PUBLIC_GITHUB_USERNAME}
-            theme={theme}
+      <div className={styles.contributions}>
+        <GitHubCalendar
+          username={process.env.NEXT_PUBLIC_GITHUB_USERNAME}
+          theme={theme}
             hideColorLegend={false}
             hideMonthLabels={false}
-          />
+        />
         </div>
       </div>
       </div>
@@ -163,7 +163,7 @@ export async function getStaticProps() {
     console.log('Using API token:', token ? 'Yes' : 'No');
 
     // Fetch user data
-    const userRes = await fetch(
+  const userRes = await fetch(
       `https://api.github.com/users/${username}`,
       { headers }
     );
@@ -172,7 +172,7 @@ export async function getStaticProps() {
       console.error('User API Error:', userRes.status, userRes.statusText);
     }
     
-    const user = await userRes.json();
+  const user = await userRes.json();
     console.log('User data:', user.login, 'Repos:', user.public_repos);
 
     // Fetch specific repositories
@@ -214,7 +214,7 @@ export async function getStaticProps() {
     const repoResAll = await fetch(
       `https://api.github.com/users/${username}/repos?per_page=100`,
       { headers }
-    );
+  );
     const allRepos = await repoResAll.json();
     
     if (Array.isArray(allRepos)) {
@@ -246,7 +246,7 @@ export async function getStaticProps() {
     };
   } catch (error) {
     console.error('Error fetching GitHub data:', error.message);
-    return {
+  return {
       props: { 
         title: 'GitHub', 
         repos: [], 

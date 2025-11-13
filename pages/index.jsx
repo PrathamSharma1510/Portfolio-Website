@@ -183,12 +183,12 @@ export default function HomePage() {
 
         {/* Status Card */}
         <div className={styles.statusBar}>
-          <span className={styles.statusItem}>
-            <span className={styles.statusDot}></span>
-            Available for opportunities
-          </span>
-          <span className={styles.statusItem}>📍 Gainesville, FL</span>
-          <span className={styles.statusItem}>⚡ Full Stack & AI/ML</span>
+            <span className={styles.statusItem}>
+              <span className={styles.statusDot}></span>
+              Available for opportunities
+            </span>
+            <span className={styles.statusItem}>📍 Gainesville, FL</span>
+            <span className={styles.statusItem}>⚡ Full Stack & AI/ML</span>
         </div>
       </div>
     </>

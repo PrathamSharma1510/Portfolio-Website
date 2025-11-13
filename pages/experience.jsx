@@ -50,8 +50,8 @@ const ExperiencePage = () => {
   return (
     <>
       <Breadcrumbs filename="experience.json" />
-      <div className={`${styles.experienceContainer} ${isVisible ? styles.visible : ''}`}>
-        {/* Stats Section */}
+    <div className={`${styles.experienceContainer} ${isVisible ? styles.visible : ''}`}>
+      {/* Stats Section */}
       <div className={styles.statsSection}>
         <div className={styles.statCard}>
           <div className={styles.statNumber}>{stats.total}</div>
@@ -113,7 +113,7 @@ const ExperiencePage = () => {
           </button>
         </div>
       )}
-      </div>
+    </div>
     </>
   );
 };

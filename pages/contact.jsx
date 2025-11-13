@@ -65,7 +65,7 @@ const ContactPage = () => {
   return (
     <>
       <Breadcrumbs filename="contact.css" />
-      <div className={`${styles.container} ${isVisible ? styles.visible : ''}`}>
+    <div className={`${styles.container} ${isVisible ? styles.visible : ''}`}>
       {showSuccess && (
         <div className={styles.modal}>
           <div className={styles.modalContent}>
@@ -183,7 +183,7 @@ const ContactPage = () => {
           <div className={styles.cssLine}>
             <span className={styles.lineNumber}>16</span>
             <span></span>
-          </div>
+      </div>
 
       <div className={styles.contentGrid}>
         <div className={styles.socialSection}>
@@ -329,7 +329,7 @@ const ContactPage = () => {
 
           <div className={styles.cssLine}>
             <span className={styles.lineNumber}>21</span>
-            <span className={styles.bracket}>&#125;</span>
+        <span className={styles.bracket}>&#125;</span>
           </div>
 
           <div className={styles.cssLine}>
@@ -363,7 +363,7 @@ const ContactPage = () => {
           <span className={styles.statusItem}>Ln 23, Col 1</span>
         </div>
       </div>
-      </div>
+    </div>
     </>
   );
 };

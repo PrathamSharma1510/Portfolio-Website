@@ -13,7 +13,7 @@ const ThemeInfo = ({ icon, name, publisher, theme, isActive, onThemeChange }) =>
   return (
     <div className={`${styles.container} ${isActive ? styles.active : ''}`}>
       <div className={styles.imageWrapper}>
-        <Image src={icon} alt={name} height={100} width={100} />
+      <Image src={icon} alt={name} height={100} width={100} />
         {isActive && <div className={styles.activeBadge}>✓ Active</div>}
       </div>
       <div className={styles.info}>

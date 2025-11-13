@@ -18,10 +18,10 @@ function MyApp({ Component, pageProps }) {
 
   return (
     <TabsProvider>
-      <Layout>
-        <Head title={`Pratham Sharma | ${pageProps.title}`} />
-        <Component {...pageProps} />
-      </Layout>
+    <Layout>
+      <Head title={`Pratham Sharma | ${pageProps.title}`} />
+      <Component {...pageProps} />
+    </Layout>
     </TabsProvider>
   );
 }

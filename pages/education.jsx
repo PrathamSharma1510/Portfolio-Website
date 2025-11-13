@@ -171,9 +171,9 @@ const EducationPage = () => {
 };
 
 export async function getStaticProps() {
-  return {
-    props: { title: 'Education' },
-  };
-}
+    return {
+      props: { title: 'Education' },
+    };
+  }
 
 export default EducationPage;

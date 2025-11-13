@@ -73,7 +73,7 @@ const AboutPage = () => {
   return (
     <>
       <Breadcrumbs filename="about.html" />
-      <div className={`${styles.container} ${isVisible ? styles.visible : ''}`}>
+    <div className={`${styles.container} ${isVisible ? styles.visible : ''}`}>
         {/* HTML Document */}
       <div className={styles.editorContent}>
         <div className={styles.htmlDocument}>
@@ -152,7 +152,7 @@ const AboutPage = () => {
           </div>
 
           {/* Hero Visual Section */}
-          <div className={styles.heroSection}>
+      <div className={styles.heroSection}>
         <div className={styles.imageContainer}>
           <div className={styles.imageWrapper}>
             <img src="/me.jpeg" alt="Pratham Sharma" className={styles.profileImage} />
@@ -212,7 +212,7 @@ const AboutPage = () => {
             <span className={styles.operator}>=</span>
             <span className={styles.string}>"tech-skills"</span>
             <span className={styles.tag}>{'>'}</span>
-          </div>
+      </div>
 
       {/* Skills Section */}
       <div className={styles.section}>
@@ -302,7 +302,7 @@ const AboutPage = () => {
             <span className={styles.operator}>=</span>
             <span className={styles.string}>"journey"</span>
             <span className={styles.tag}>{'>'}</span>
-          </div>
+      </div>
 
       {/* Journey Section */}
       <div className={styles.section}>
@@ -366,7 +366,7 @@ const AboutPage = () => {
             <span className={styles.operator}>=</span>
             <span className={styles.string}>"interests"</span>
             <span className={styles.tag}>{'>'}</span>
-          </div>
+      </div>
 
       {/* Interests Section */}
       <div className={styles.section}>
@@ -422,7 +422,7 @@ const AboutPage = () => {
             <span className={styles.operator}>=</span>
             <span className={styles.string}>"facts"</span>
             <span className={styles.tag}>{'>'}</span>
-          </div>
+      </div>
 
       {/* Fun Facts */}
       <div className={styles.section}>
@@ -473,7 +473,7 @@ const AboutPage = () => {
             <span className={styles.tag}>{'<'}</span>
             <span className={styles.tagName}>footer</span>
             <span className={styles.tag}>{'>'}</span>
-          </div>
+      </div>
 
       {/* Call to Action */}
       <div className={styles.ctaSection}>
@@ -536,7 +536,7 @@ const AboutPage = () => {
           <span className={styles.statusItem}>Ln 33, Col 7</span>
         </div>
       </div>
-      </div>
+    </div>
     </>
   );
 };

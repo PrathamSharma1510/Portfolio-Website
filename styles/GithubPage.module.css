@@ -98,7 +98,7 @@
   0% {
     width: 0%;
     transform: translateX(0);
-  }
+}
   50% {
     width: 100%;
     transform: translateX(0);
