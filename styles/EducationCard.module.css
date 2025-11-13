@@ -1,0 +1,36 @@
+.iconSpan {
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+}
+
+.iconContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+}
+
+.dateStyle {
+    color: #ffffff;  /* Default color */
+  }
+
+.grade {
+    font-size: 0.95rem;
+    font-weight: 600;
+    color: #667eea;
+    margin: 0.5rem 0;
+    padding: 0.4rem 0.8rem;
+    background: rgba(102, 126, 234, 0.1);
+    border-left: 3px solid #667eea;
+    display: inline-block;
+    border-radius: 4px;
+  }
+
+@media (max-width: 1169px) {
+    .dateStyle {
+      color: #667eea;  /* Change color to match theme */
+    }
+  }
+  

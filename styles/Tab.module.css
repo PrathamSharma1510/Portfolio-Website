@@ -1,0 +1,61 @@
+.tab {
+  padding: 0.5rem 1.25rem;
+  background: var(--tab-bg);
+  color: #ececec;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  border: 1px solid var(--tab-border);
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 0.9rem;
+  cursor: pointer;
+  position: relative;
+  min-width: 120px;
+  max-width: 180px;
+  flex-shrink: 0;
+}
+
+.tab p {
+  margin-left: 0;
+  flex: 1;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.tab:hover .closeButton {
+  opacity: 1;
+}
+
+.active {
+  border-top: 1px solid var(--accent-color);
+  background: var(--tab-active-bg);
+  border-bottom: none;
+}
+
+.active .closeButton {
+  opacity: 1;
+}
+
+.closeButton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 20px;
+  height: 20px;
+  border: none;
+  background: transparent;
+  color: rgb(131, 131, 131);
+  font-size: 20px;
+  cursor: pointer;
+  border-radius: 3px;
+  opacity: 0;
+  transition: all 0.2s ease;
+  padding: 0;
+  line-height: 1;
+}
+
+.closeButton:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+  color: var(--text-color);
+}

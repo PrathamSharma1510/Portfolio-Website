@@ -1,0 +1,15 @@
+{
+  "name": "Pratham Sharma - Portfolio",
+  "short_name": "PS Portfolio",
+  "icons": [
+    {
+      "src": "/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml"
+    }
+  ],
+  "theme_color": "#667eea",
+  "background_color": "#1e1e1e",
+  "display": "standalone"
+}
+

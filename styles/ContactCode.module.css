@@ -1,0 +1,151 @@
+/* ContactCode.module.css */
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;600&display=swap');
+
+.socialCards {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.socialCard {
+  background: rgba(255, 255, 255, 0.03);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 12px;
+  padding: 1.2rem 1.5rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  animation: fadeInLeft 0.6s ease-out both;
+  position: relative;
+  overflow: hidden;
+}
+
+@keyframes fadeInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.socialCard::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 3px;
+  height: 100%;
+  background: linear-gradient(180deg, transparent, var(--accent-color), transparent);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.socialCard:hover {
+  background: rgba(255, 255, 255, 0.05);
+  border-color: rgba(255, 255, 255, 0.2);
+  transform: translateX(5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+.socialCard:hover::before {
+  opacity: 1;
+}
+
+.cardIcon {
+  width: 50px;
+  height: 50px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  border: 2px solid;
+  flex-shrink: 0;
+  transition: all 0.3s ease;
+}
+
+.socialCard:hover .cardIcon {
+  transform: scale(1.1) rotate(5deg);
+}
+
+.cardContent {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+}
+
+.socialName {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #ffffff;
+}
+
+.socialLink {
+  font-size: 0.9rem;
+  color: #888;
+  font-family: 'Fira Code', monospace;
+  word-break: break-all;
+}
+
+.cardArrow {
+  font-size: 1.5rem;
+  color: #888;
+  transition: all 0.3s ease;
+}
+
+.socialCard:hover .cardArrow {
+  color: var(--accent-color);
+  transform: translateX(5px);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .socialCard {
+    padding: 1rem 1.2rem;
+  }
+
+  .cardIcon {
+    width: 45px;
+    height: 45px;
+    font-size: 1.3rem;
+  }
+
+  .socialName {
+    font-size: 0.95rem;
+  }
+
+  .socialLink {
+    font-size: 0.85rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .socialCard {
+    padding: 0.9rem 1rem;
+  }
+
+  .cardIcon {
+    width: 40px;
+    height: 40px;
+    font-size: 1.2rem;
+  }
+
+  .socialName {
+    font-size: 0.9rem;
+  }
+
+  .socialLink {
+    font-size: 0.8rem;
+  }
+
+  .cardArrow {
+    font-size: 1.2rem;
+  }
+}
