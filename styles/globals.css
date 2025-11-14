@@ -17,16 +17,6 @@
   box-sizing: border-box;
 }
 
-html {
-  overflow-x: hidden;
-  width: 100%;
-}
-
-body {
-  overflow-x: hidden;
-  width: 100%;
-}
-
 /* Apply Editor Settings Site-wide */
 
 /* Font Family - Apply to everything */
