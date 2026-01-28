@@ -175,8 +175,8 @@ const AboutPage = () => {
           <p className={styles.heroDescription}>
             A <span className={styles.highlight}>Full Stack Developer</span> and{' '}
             <span className={styles.highlight}>AI/ML Enthusiast</span> passionate about 
-            building scalable, user-focused applications. Currently pursuing MS in Computer Science 
-            at the <span className={styles.highlightYellow}>University of Florida</span>.
+            building scalable, user-focused applications. Completed MS in Computer Science 
+            from the <span className={styles.highlightYellow}>University of Florida</span> in December 2024.
           </p>
         </div>
       </div>
